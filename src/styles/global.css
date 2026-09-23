@@ -9,6 +9,9 @@
   --ink: #15171c; --body: #3d4250; --muted: #5c6170; --subtle: #8a8f9c;
   --line: #e2ded4; --line-strong: #d9d4c8; --line-soft: #ece8df;
   --accent: #2f5bd3; --blue-soft: #f3f6fd; --blue-tint: #e8eefb; --warm-soft: #fcf8f4; --on-solid: #fff;
+  --added-bg: #e6f4ea; --added-ink: #17603b; --deleted-bg: #fbe9e7; --deleted-ink: #8e1b12;
+  --updated-bg: #fdf4e3; --updated-ink: #8a5a0b; --updated-mark: #f6dda8;
+  --moved-bg: #efebfa; --moved-ink: #5b45b8; --chart-bars: #e4e1d9; --warm-ink: #7a3310;
   --gutter: max(24px, calc((100vw - 1200px) / 2));
   font-family: Geist, ui-sans-serif, system-ui, sans-serif;
   color: var(--ink); background: var(--page); font-synthesis: none;
@@ -19,7 +22,11 @@
   --ink: #f1f0ed; --body: #d1d3da; --muted: #b2b5c0; --subtle: #9499aa;
   --line: #393d49; --line-strong: #484d5a; --line-soft: #323641;
   --accent: #8caaff; --blue-soft: #252d42; --blue-tint: #303d60; --warm-soft: #302923;
+  --added-bg: #173424; --added-ink: #9be0b6; --deleted-bg: #412321; --deleted-ink: #ffc1b9;
+  --updated-bg: #3a2f17; --updated-ink: #f3d794; --updated-mark: #635125;
+  --moved-bg: #302a47; --moved-ink: #c4b5ff; --chart-bars: #393d49; --warm-ink: #ffcba8;
 }
+.fixed-light-palette { --surface: #fff; --ink: #15171c; --muted: #5c6170; --updated-bg: #fdf4e3; --added-bg: #e6f4ea; --added-ink: #17603b; }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 24px; }
 body { margin: 0; -webkit-font-smoothing: antialiased; }
@@ -43,7 +50,7 @@ code { font-family: 'Geist Mono', ui-monospace, monospace; }
 .site-header > nav { gap: clamp(16px, 2vw, 32px) !important; white-space: nowrap; }
 .brand-tagline { display: none; }
 .menu-toggle { display: none; padding: 9px 14px; border: 1px solid var(--line-strong); border-radius: 8px; background: var(--surface); }
-.theme-switch button[aria-pressed='true'] { color: var(--ink) !important; background: var(--surface) !important; box-shadow: 0 1px 3px #0002 !important; }
+.theme-switch button[aria-pressed='true'] { color: var(--page) !important; background: var(--ink) !important; box-shadow: 0 1px 3px #0002 !important; }
 .theme-switch button[aria-pressed='false'] { color: var(--muted) !important; background: transparent !important; box-shadow: none !important; }
 .site-header a[href*='download'], .themes a[href*='download'] { background: #2f5bd3 !important; color: #fff !important; }
 .site-header a[href*='download']:hover, .themes a[href*='download']:hover { background: #2449b2 !important; text-decoration: none; }

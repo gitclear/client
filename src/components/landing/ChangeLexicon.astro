@@ -10,33 +10,33 @@
     <div style="border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: var(--surface-soft)">
       <div style="padding: 14px 20px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; font-size: 14px"><span style="font-weight: 600">Standard line diff</span><span style="font-family: 'Geist Mono', ui-monospace, monospace; color: var(--muted)">invoice.rb</span></div>
       <div style="padding: 12px 0; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 14px; line-height: 2">
-        <div style="padding: 0 20px; background: #FBE9E7; color: #8E1B12">-  def total_with_tax</div>
-        <div style="padding: 0 20px; background: #FBE9E7; color: #8E1B12">-    subtotal * (1 + TAX)</div>
-        <div style="padding: 0 20px; background: #FBE9E7; color: #8E1B12">-  Invoice.recent(account)</div>
-        <div style="padding: 0 20px; background: #E6F4EA; color: #17603B">+  def total_with_tax</div>
-        <div style="padding: 0 20px; background: #E6F4EA; color: #17603B">+    subtotal * (1 + tax_rate(region))</div>
-        <div style="padding: 0 20px; background: #E6F4EA; color: #17603B">+    return 0 if line_items.empty?</div>
-        <div style="padding: 0 20px; background: #E6F4EA; color: #17603B">+  Invoice.recent_for(account)</div>
+        <div style="padding: 0 20px; background: var(--deleted-bg); color: var(--deleted-ink)">-  def total_with_tax</div>
+        <div style="padding: 0 20px; background: var(--deleted-bg); color: var(--deleted-ink)">-    subtotal * (1 + TAX)</div>
+        <div style="padding: 0 20px; background: var(--deleted-bg); color: var(--deleted-ink)">-  Invoice.recent(account)</div>
+        <div style="padding: 0 20px; background: var(--added-bg); color: var(--added-ink)">+  def total_with_tax</div>
+        <div style="padding: 0 20px; background: var(--added-bg); color: var(--added-ink)">+    subtotal * (1 + tax_rate(region))</div>
+        <div style="padding: 0 20px; background: var(--added-bg); color: var(--added-ink)">+    return 0 if line_items.empty?</div>
+        <div style="padding: 0 20px; background: var(--added-bg); color: var(--added-ink)">+  Invoice.recent_for(account)</div>
       </div>
       <div style="padding: 14px 20px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted)">7 lines to read. Was it deleted or moved? Who wrote it?</div>
     </div>
     <div style="border: 1px solid var(--ink); border-radius: 16px; overflow: hidden; background: var(--surface)">
       <div style="padding: 14px 20px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; font-size: 14px"><span style="font-weight: 600">Diff Digest</span><span style="font-family: 'Geist Mono', ui-monospace, monospace; color: var(--muted)">invoice.rb · 62% AI</span></div>
       <div style="padding: 12px 0; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 14px; line-height: 2">
-        <div style="padding: 0 20px; display: flex; justify-content: space-between; color: #9A9FAB"><span>⇄  def total_with_tax</span><span style="font-size: 12px; color: #5B45B8">moved · calc.rb:118</span></div>
-        <div style="padding: 0 20px; display: flex; justify-content: space-between; background: #FDF4E3"><span>~    subtotal * (1 + <span style="background: #F6DDA8; border-radius: 3px">tax_rate(region)</span>)</span><span style="font-size: 12px; color: #8A5A0B">updated · Claude Opus 5</span></div>
-        <div style="padding: 0 20px; display: flex; justify-content: space-between; background: #E6F4EA"><span style="color: #17603B">+    return 0 if line_items.empty?</span><span style="font-size: 12px; color: #17603B">added · Claude Opus 5</span></div>
-        <div style="padding: 0 20px; display: flex; justify-content: space-between; color: #9A9FAB"><span>⌕  Invoice.recent_for(account)</span><span style="font-size: 12px; color: #2F4FA8">find/replace ×41</span></div>
+        <div style="padding: 0 20px; display: flex; justify-content: space-between; color: #9A9FAB"><span>⇄  def total_with_tax</span><span style="font-size: 12px; color: var(--moved-ink)">moved · calc.rb:118</span></div>
+        <div style="padding: 0 20px; display: flex; justify-content: space-between; background: var(--updated-bg)"><span>~    subtotal * (1 + <span style="background: var(--updated-mark); border-radius: 3px">tax_rate(region)</span>)</span><span style="font-size: 12px; color: var(--updated-ink)">updated · Claude Opus 5</span></div>
+        <div style="padding: 0 20px; display: flex; justify-content: space-between; background: var(--added-bg)"><span style="color: var(--added-ink)">+    return 0 if line_items.empty?</span><span style="font-size: 12px; color: var(--added-ink)">added · Claude Opus 5</span></div>
+        <div style="padding: 0 20px; display: flex; justify-content: space-between; color: #9A9FAB"><span>⌕  Invoice.recent_for(account)</span><span style="font-size: 12px; color: var(--accent)">find/replace ×41</span></div>
       </div>
       <div style="padding: 14px 20px; border-top: 1px solid var(--line); font-size: 14px; color: var(--ink); font-weight: 500">2 lines need real attention. The rename is reviewed once, not 41 times.</div>
     </div>
   </div>
   <div data-grid="six" style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px">
-    <div style="padding: 16px; border-radius: 12px; background: #E6F4EA; display: flex; flex-direction: column; gap: 6px"><div style="font-weight: 600; color: #17603B">+ Added</div><div style="font-size: 13px; line-height: 1.45; color: #2B4A38">New code, attributed to a human or a model.</div></div>
-    <div style="padding: 16px; border-radius: 12px; background: #FBE9E7; display: flex; flex-direction: column; gap: 6px"><div style="font-weight: 600; color: #8E1B12">− Deleted</div><div style="font-size: 13px; line-height: 1.45; color: #5E2A24">Actually gone, not just relocated.</div></div>
-    <div style="padding: 16px; border-radius: 12px; background: #FDF4E3; display: flex; flex-direction: column; gap: 6px"><div style="font-weight: 600; color: #8A5A0B">~ Updated</div><div style="font-size: 13px; line-height: 1.45; color: #5A4318">A tweak that keeps the line's history.</div></div>
-    <div style="padding: 16px; border-radius: 12px; background: #EFEBFA; display: flex; flex-direction: column; gap: 6px"><div style="font-weight: 600; color: #5B45B8">⇄ Moved</div><div style="font-size: 13px; line-height: 1.45; color: #3E3470">Refactors and renames, labeled with the source.</div></div>
-    <div style="padding: 16px; border-radius: 12px; background: var(--blue-tint); display: flex; flex-direction: column; gap: 6px"><div style="font-weight: 600; color: #2F4FA8">⌕ Find &amp; replace</div><div style="font-size: 13px; line-height: 1.45; color: #2A3A66">One decision, reviewed once.</div></div>
+    <div style="padding: 16px; border-radius: 12px; background: var(--added-bg); display: flex; flex-direction: column; gap: 6px"><div style="font-weight: 600; color: var(--added-ink)">+ Added</div><div style="font-size: 13px; line-height: 1.45; color: var(--added-ink)">New code, attributed to a human or a model.</div></div>
+    <div style="padding: 16px; border-radius: 12px; background: var(--deleted-bg); display: flex; flex-direction: column; gap: 6px"><div style="font-weight: 600; color: var(--deleted-ink)">− Deleted</div><div style="font-size: 13px; line-height: 1.45; color: var(--deleted-ink)">Actually gone, not just relocated.</div></div>
+    <div style="padding: 16px; border-radius: 12px; background: var(--updated-bg); display: flex; flex-direction: column; gap: 6px"><div style="font-weight: 600; color: var(--updated-ink)">~ Updated</div><div style="font-size: 13px; line-height: 1.45; color: var(--updated-ink)">A tweak that keeps the line's history.</div></div>
+    <div style="padding: 16px; border-radius: 12px; background: var(--moved-bg); display: flex; flex-direction: column; gap: 6px"><div style="font-weight: 600; color: var(--moved-ink)">⇄ Moved</div><div style="font-size: 13px; line-height: 1.45; color: var(--moved-ink)">Refactors and renames, labeled with the source.</div></div>
+    <div style="padding: 16px; border-radius: 12px; background: var(--blue-tint); display: flex; flex-direction: column; gap: 6px"><div style="font-weight: 600; color: var(--accent)">⌕ Find &amp; replace</div><div style="font-size: 13px; line-height: 1.45; color: var(--body)">One decision, reviewed once.</div></div>
     <div style="padding: 16px; border-radius: 12px; background: var(--muted-surface); display: flex; flex-direction: column; gap: 6px"><div style="font-weight: 600; color: var(--body)">· Whitespace</div><div style="font-size: 13px; line-height: 1.45; color: var(--body)">Reindents treated as the no-op they are.</div></div>
   </div>
 </section>

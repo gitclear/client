@@ -19,7 +19,12 @@ the site locally through Wrangler to verify Cloudflare routing and 404 behavior.
 
 ## Pages and components
 
-- `src/pages/index.astro`: home page.
+- `src/pages/index.astro`: Diff Digest landing page, adapted from the supplied `GitClient.com.html` design.
+- `src/components/landing/`: the ten landing-page sections, including SVG research charts and product previews.
+- `src/components/GitInstaller.tsx`: the React installer island, with OS detection, keyboard-accessible tabs, and clipboard feedback.
+- `src/data/`: activity-preview and comparison-table content rendered at build time.
+- `src/scripts/site.ts`: persisted light/dark theme and mobile navigation.
+- `public/fonts/`: Geist, Geist Mono, and Instrument Serif fonts extracted from the supplied design, served locally.
 - `src/pages/about.astro` and `src/pages/updates.astro`: placeholder auxiliary pages.
 - `src/pages/404.astro`: custom not-found page.
 - `src/layouts/SiteLayout.astro`: shared navigation, metadata, and page shell.
@@ -28,9 +33,9 @@ the site locally through Wrangler to verify Cloudflare routing and 404 behavior.
 Add `.astro` or `.md` files under `src/pages/` for additional routes. Files in
 `public/` are copied directly into the build, useful for images and downloads.
 
-React components live in `src/components/`. `SiteName.tsx` demonstrates a React
-component rendered at build time with no browser JavaScript. For a component that
-needs browser interaction, import it into an Astro page and opt into hydration:
+React components live in `src/components/`. The installer uses `client:load`;
+the rest of the landing page is static HTML with a small shared navigation/theme
+script. For another component that needs browser interaction, opt into hydration:
 
 ```astro
 ---
@@ -40,8 +45,14 @@ import InteractiveWidget from '../components/InteractiveWidget';
 ```
 
 `client:visible` loads the component when it approaches the viewport;
-`client:load` loads it immediately. Omit the directive for static HTML. The starter
-pages need no browser JavaScript. See [Astro's React integration](https://docs.astro.build/en/guides/integrations-guide/react/).
+`client:load` loads it immediately. Omit the directive for static HTML. The page
+content and download links work without JavaScript. See [Astro's React integration](https://docs.astro.build/en/guides/integrations-guide/react/).
+
+The two product previews in `History.astro` and `DeepDive.astro` are labeled
+“Video coming soon”: no recordings were included in the design. Replace their
+preview frames with native video players when the media is available. Download
+and purchase links use the GitClear destinations from the design. The research
+charts, comparison entries, and pricing copy also follow the supplied design.
 
 ## Deploy to Cloudflare
 
@@ -65,4 +76,4 @@ Static asset requests are [free and unlimited](https://developers.cloudflare.com
 on the Workers Free plan. A future Worker script for APIs or server rendering has
 separate usage limits. Domain registration is separate from hosting.
 
-The home, About, and Updates pages contain starter copy to replace before launch.
+The About and Updates pages still contain starter copy to replace before launch.

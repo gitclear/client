@@ -1,0 +1,60 @@
+<section class="landing-section deep-dive" id="deep-dive" style="flex-shrink: 0; box-sizing: border-box; padding: 112px 120px; display: flex; flex-direction: column; gap: 40px">
+  <div data-grid="split" style="display: grid; grid-template-columns: minmax(0, 1fr) 460px; gap: 72px; align-items: end">
+    <div style="display: flex; flex-direction: column; gap: 16px">
+      <div style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: #B24A14">05 · Deep Dive with Claude</div>
+      <h2 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: 64px; line-height: 1; letter-spacing: -0.015em">Ask Claude about the diff. <em style="font-style: italic">Let the author keep building.</em></h2>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 16px">
+      <p style="margin: 0; font-size: 17px; line-height: 1.6; color: var(--body)">Understanding a teammate's pull request used to mean a comment, a Slack ping and an afternoon of waiting. In Diff Digest, click + beside any line and ask the latest Claude why it changed. Deep Dive follows the code and its history; you decide whether the answer holds up.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px">
+        <span style="padding: 7px 12px; border: 1px solid #E8CDBE; border-radius: 999px; background: var(--surface); font-size: 13px; color: #7A3310">Why was this guard added?</span>
+        <span style="padding: 7px 12px; border: 1px solid #E8CDBE; border-radius: 999px; background: var(--surface); font-size: 13px; color: #7A3310">Is this tested?</span>
+        <span style="padding: 7px 12px; border: 1px solid #E8CDBE; border-radius: 999px; background: var(--surface); font-size: 13px; color: #7A3310">Could this be simpler?</span>
+      </div>
+    </div>
+  </div>
+
+  <figure style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+    <div style="position: relative; height: 660px; border: 1px solid var(--line-strong); border-radius: 20px; background: var(--surface); overflow: hidden; box-shadow: 0 30px 60px -40px rgba(21,23,28,0.35)">
+      <div style="height: 44px; box-sizing: border-box; padding: 0 18px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid var(--line-soft); background: var(--surface-soft)">
+        <span style="width: 12px; height: 12px; border-radius: 999px; background: #E36B5D"></span>
+        <span style="width: 12px; height: 12px; border-radius: 999px; background: #E9B949"></span>
+        <span style="width: 12px; height: 12px; border-radius: 999px; background: #6DBE6A"></span>
+        <span style="flex-grow: 1; text-align: center; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; color: var(--muted)">diff-digest — PR #2291 feature/ai-refactor — app/models/invoice.rb</span>
+      </div>
+      <div data-grid="split" style="display: grid; grid-template-columns: minmax(0, 1fr) 420px; height: 616px">
+        <div style="box-sizing: border-box; padding: 20px 0; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 14px; line-height: 2.1; border-right: 1px solid var(--line-soft)">
+          <div style="padding: 0 24px 12px; display: flex; justify-content: space-between; font-family: Geist, sans-serif; font-size: 13px; color: var(--muted)"><span style="display: flex; align-items: center; gap: 10px"><span>Review depth</span><span style="padding: 3px 9px; border-radius: 999px; background: var(--ink); color: var(--on-solid); font-weight: 600">Focused</span><span>13 of 37 files open</span></span><span>62% AI</span></div>
+          <div style="padding: 0 24px; display: grid; grid-template-columns: 40px minmax(0, 1fr) 150px; color: #9A9FAB"><span>41</span><span>⇄  def total_with_tax</span><span style="font-size: 12px; text-align: right">moved · calc.rb:118</span></div>
+          <div style="padding: 0 24px; display: grid; grid-template-columns: 40px minmax(0, 1fr) 150px; background: #FDF4E3"><span style="color: #9A9FAB">42</span><span>~    subtotal * (1 + tax_rate(region))</span><span style="font-size: 12px; text-align: right; color: #8A5A0B">Claude Opus 5</span></div>
+          <div style="padding: 0 24px; display: grid; grid-template-columns: 40px minmax(0, 1fr) 150px; background: #E6F4EA; box-shadow: inset 3px 0 0 #B24A14"><span style="color: #17603B; font-weight: 600">43</span><span style="color: #17603B">+    return 0 if line_items.empty?</span><span style="font-size: 12px; text-align: right; color: #17603B">Claude Opus 5</span></div>
+          <div style="padding: 0 24px; display: grid; grid-template-columns: 40px minmax(0, 1fr) 150px; color: #9A9FAB"><span>44</span><span>⌕    Invoice.recent_for(account)</span><span style="font-size: 12px; text-align: right; color: #2F4FA8">find/replace ×41</span></div>
+          <div style="padding: 0 24px; display: grid; grid-template-columns: 40px minmax(0, 1fr) 150px; background: #E6F4EA"><span style="color: #9A9FAB">45</span><span style="color: #17603B">+    # guards against stale region cache</span><span style="font-size: 12px; text-align: right; color: #17603B">human · @mira</span></div>
+          <div style="padding: 0 24px; display: grid; grid-template-columns: 40px minmax(0, 1fr) 150px; color: #B4B8C2"><span>46</span><span>   end</span><span></span></div>
+          <div style="margin: 18px 24px 0; padding: 14px 16px; border: 1px dashed var(--line-strong); border-radius: 10px; font-family: Geist, sans-serif; font-size: 13px; line-height: 1.5; color: var(--muted)">Hover any line for the commit message behind it. Click <strong style="color: #B24A14">+</strong> to ask Claude.</div>
+        </div>
+        <div style="box-sizing: border-box; padding: 22px; background: var(--warm-soft); display: flex; flex-direction: column; gap: 16px">
+          <div style="display: flex; align-items: center; justify-content: space-between">
+            <span style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600"><span style="width: 22px; height: 22px; border-radius: 6px; background: #B24A14; display: flex; align-items: center; justify-content: center"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--surface)" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4"></path></svg></span>Deep Dive · line 43</span>
+            <span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; color: var(--muted)">Claude</span>
+          </div>
+          <div style="align-self: flex-end; max-width: 300px; padding: 12px 14px; border-radius: 14px 14px 4px 14px; background: var(--ink); color: var(--on-solid); font-size: 14px; line-height: 1.5">Why was this guard added — is it tested?</div>
+          <div style="padding: 14px 16px; border: 1px solid #EAD9CC; border-radius: 14px 14px 14px 4px; background: var(--surface); font-size: 14px; line-height: 1.6; color: var(--ink)">Added when invoices with no line items started returning <code style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; padding: 1px 5px; border-radius: 4px; background: var(--muted-surface)">nil</code> from the tax calculation. Covered by <code style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; padding: 1px 5px; border-radius: 4px; background: var(--muted-surface)">invoice_spec.rb:212</code>.</div>
+          <div style="display: flex; gap: 6px; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; color: var(--muted)"><span style="padding: 3px 7px; border-radius: 5px; background: var(--muted-surface)">commit a91f3c2</span><span style="padding: 3px 7px; border-radius: 5px; background: var(--muted-surface)">invoice_spec.rb</span></div>
+          <div style="margin-top: auto; height: 48px; box-sizing: border-box; padding: 0 8px 0 14px; border: 1px solid #E2D2C5; border-radius: 12px; background: var(--surface); display: flex; align-items: center; justify-content: space-between; font-size: 14px; color: var(--subtle)">Ask a follow-up about this change…<span style="width: 34px; height: 34px; border-radius: 8px; background: #B24A14; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--surface)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></div>
+        </div>
+      </div>
+      <div style="position: absolute; left: 0; right: 0; top: 44px; bottom: 0; display: flex; align-items: center; justify-content: center; background: rgba(246,244,239,0.22)">
+        <div aria-hidden="true" class="preview-play" style="width: 104px; height: 104px; border: 0; border-radius: 999px; background: #B24A14; color: var(--on-solid); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 10px rgba(255,255,255,0.7)">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="margin-left: 5px"><path d="M7 4.5v15l13-7.5z"></path></svg>
+        </div>
+      </div>
+      <div style="position: absolute; left: 20px; right: 20px; bottom: 18px; height: 44px; box-sizing: border-box; padding: 0 16px; border-radius: 12px; background: rgba(21,23,28,0.9); display: flex; align-items: center; gap: 14px; color: var(--on-solid); font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px">
+        <span>Preview</span>
+        <span style="flex-grow: 1; height: 4px; border-radius: 999px; background: #3A3E48"></span>
+        <span>Video coming soon</span>
+      </div>
+    </div>
+    <figcaption style="display: flex; justify-content: space-between; font-size: 14px; color: var(--muted)"><span>Product preview: opening a PR, selecting line 43, and asking Claude instead of the author.</span><span>Deep Dive is included with Diff Digest Pro.</span></figcaption>
+  </figure>
+</section>

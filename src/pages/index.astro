@@ -1,10 +1,26 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
+import Hero from '../components/landing/Hero.astro';
+import History from '../components/landing/History.astro';
+import Research from '../components/landing/Research.astro';
+import ReviewTools from '../components/landing/ReviewTools.astro';
+import ChangeLexicon from '../components/landing/ChangeLexicon.astro';
+import DeepDive from '../components/landing/DeepDive.astro';
+import Features from '../components/landing/Features.astro';
+import Comparison from '../components/landing/Comparison.astro';
+import Pricing from '../components/landing/Pricing.astro';
+import Themes from '../components/landing/Themes.astro';
 ---
 
-<SiteLayout title="gitclient" description="The home of gitclient. More coming soon.">
-  <p class="eyebrow">gitclient.com</p>
-  <h1>gitclient</h1>
-  <p class="lead">A new home for gitclient. More coming soon.</p>
-  <a class="button" href="/updates/">Project updates <span aria-hidden="true">→</span></a>
+<SiteLayout title="GitClient.com — Meet Diff Digest" description="Meet Diff Digest, the next-generation git client. Browse every repo, review meaningful changes, and ask Claude about any line." landing>
+  <Hero />
+  <History />
+  <Research />
+  <ReviewTools />
+  <ChangeLexicon />
+  <DeepDive />
+  <Features />
+  <Comparison />
+  <Pricing />
+  <Themes />
 </SiteLayout>

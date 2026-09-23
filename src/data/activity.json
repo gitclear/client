@@ -1,0 +1,72 @@
+[
+  {
+    "repo": "gitclear-rails",
+    "msg": "Split review salience scoring into per-tier workers",
+    "who": "Claude Opus 5 + @bill",
+    "impact": 94,
+    "dd": 1840
+  },
+  {
+    "repo": "diff-digest",
+    "msg": "Persist per-file reviewed ranges across sessions",
+    "who": "@kevin",
+    "impact": 71,
+    "dd": 1210
+  },
+  {
+    "repo": "amplenote-web",
+    "msg": "Rich footnote embeds for task references",
+    "who": "Cursor + @sam",
+    "impact": 58,
+    "dd": 960
+  },
+  {
+    "repo": "telemetry-hooks",
+    "msg": "Detect model from transcript JSONL on Codex",
+    "who": "@bill",
+    "impact": 44,
+    "dd": 702
+  },
+  {
+    "repo": "gitclear-rails",
+    "msg": "Move tax helpers into Billing::Calc",
+    "who": "Claude Opus 5",
+    "impact": 39,
+    "dd": 611
+  },
+  {
+    "repo": "plugins",
+    "msg": "Calendar plugin: recurring-event exceptions",
+    "who": "@ana",
+    "impact": 31,
+    "dd": 488
+  },
+  {
+    "repo": "diff-digest",
+    "msg": "Whitespace-only hunks collapsed by default",
+    "who": "@kevin",
+    "impact": 24,
+    "dd": 355
+  },
+  {
+    "repo": "marketing-site",
+    "msg": "GitClient.com landing page, light theme",
+    "who": "@bill",
+    "impact": 17,
+    "dd": 240
+  },
+  {
+    "repo": "amplenote-web",
+    "msg": "Rename recentFor \u2192 recent_for (41 files)",
+    "who": "find/replace",
+    "impact": 6,
+    "dd": 38
+  },
+  {
+    "repo": "gitclear-rails",
+    "msg": "Reindent spec/support after rubocop bump",
+    "who": "whitespace",
+    "impact": 3,
+    "dd": 9
+  }
+]

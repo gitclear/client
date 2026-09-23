@@ -1,0 +1,65 @@
+[
+  {
+    "cap": "One activity feed spanning many repositories",
+    "a": "◐",
+    "b": "—",
+    "c": "—",
+    "d": "—",
+    "e": "—",
+    "f": "—"
+  },
+  {
+    "cap": "Spans multiple organizations at once",
+    "a": "◐",
+    "b": "—",
+    "c": "—",
+    "d": "—",
+    "e": "—",
+    "f": "—"
+  },
+  {
+    "cap": "Change ranked by impact, not chronology",
+    "a": "◐",
+    "b": "—",
+    "c": "—",
+    "d": "—",
+    "e": "—",
+    "f": "—"
+  },
+  {
+    "cap": "Distinguishes moved code from added and deleted",
+    "a": "—",
+    "b": "—",
+    "c": "—",
+    "d": "—",
+    "e": "—",
+    "f": "—"
+  },
+  {
+    "cap": "Collapses a project-wide rename into one review",
+    "a": "—",
+    "b": "—",
+    "c": "—",
+    "d": "—",
+    "e": "—",
+    "f": "—"
+  },
+  {
+    "cap": "Shows only what changed since your last review",
+    "a": "—",
+    "b": "—",
+    "c": "—",
+    "d": "—",
+    "e": "—",
+    "f": "—"
+  },
+  {
+    "cap": "Suppresses whitespace noise by default",
+    "a": "◐",
+    "b": "◐",
+    "c": "◐",
+    "d": "◐",
+    "e": "◐",
+    "f": "◐"
+  }
+]

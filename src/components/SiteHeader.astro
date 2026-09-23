@@ -1,0 +1,33 @@
+<header class="site-header" style="height: 76px; flex-shrink: 0; box-sizing: border-box; padding: 0 120px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); background: var(--page)">
+  <a href="/" style="display: flex; align-items: center; gap: 12px; color: var(--ink); text-decoration: none">
+    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+      <rect x="1" y="1" width="32" height="32" rx="9" fill="var(--ink)"></rect>
+      <path d="M11 8v18" stroke="var(--page)" stroke-width="2.2" stroke-linecap="round"></path>
+      <path d="M11 20c0-5 4-6 8-6h3" stroke="var(--page)" stroke-width="2.2" stroke-linecap="round"></path>
+      <circle cx="11" cy="8.5" r="2.6" fill="var(--page)"></circle>
+      <circle cx="24" cy="14" r="3.2" fill="var(--accent)"></circle>
+      <circle cx="11" cy="25.5" r="2.6" fill="var(--page)"></circle>
+    </svg>
+    <span style="font-size: 22px; font-weight: 600; letter-spacing: -0.02em">GitClient<span style="color: var(--muted)">.com</span></span>
+    <span class="brand-tagline">home of Diff Digest</span>
+  </a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">Menu</button>
+  <nav id="main-navigation" aria-label="Primary" style="display: flex; align-items: center; gap: 32px; font-size: 15px; font-weight: 500">
+    <a href="/#tour" style="color: var(--body)">Tour</a>
+    <a href="/#why" style="color: var(--body)">Why now</a>
+    <a href="/#deep-dive" style="color: var(--body)">Ask Claude</a>
+    <a href="/#compare" style="color: var(--body)">Compare</a>
+    <a href="/#pricing" style="color: var(--body)">Pricing</a>
+  </nav>
+  <div style="display: flex; align-items: center; gap: 14px">
+    <div class="theme-switch" role="group" aria-label="Color theme" style="display: flex; padding: 3px; border: 1px solid var(--line-strong); border-radius: 999px; background: var(--surface)">
+      <button type="button" data-theme-choice="light" aria-label="Light theme" aria-pressed="true" style="width: 36px; height: 36px; border: 0; border-radius: 999px; background: var(--ink); color: var(--page); display: flex; align-items: center; justify-content: center; cursor: pointer">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+      </button>
+      <button type="button" data-theme-choice="dark" aria-label="Dark theme" aria-pressed="false" style="width: 36px; height: 36px; border: 0; border-radius: 999px; background: transparent; color: var(--body); display: flex; align-items: center; justify-content: center; cursor: pointer">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>
+      </button>
+    </div>
+    <a href="https://www.gitclear.com/download_diff_digest" style="height: 44px; box-sizing: border-box; padding: 0 20px; display: flex; align-items: center; gap: 8px; border-radius: 10px; background: var(--accent); color: var(--on-solid); font-size: 15px; font-weight: 600; text-decoration: none">Download Diff Digest</a>
+  </div>
+</header>

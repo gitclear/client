@@ -1,0 +1,47 @@
+---
+import rows from '../../data/comparison.json';
+---
+
+<section class="landing-section comparison" id="compare" style="flex-shrink: 0; box-sizing: border-box; padding: 112px 120px; display: flex; flex-direction: column; gap: 40px">
+  <div data-grid="split" style="display: grid; grid-template-columns: minmax(0, 1fr) 400px; gap: 72px; align-items: end">
+    <div style="display: flex; flex-direction: column; gap: 16px">
+      <div style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: var(--accent)">07 · compared</div>
+      <h2 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: 64px; line-height: 1; letter-spacing: -0.015em">We went looking for a client that already does this.</h2>
+    </div>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: var(--body)">Every widely used git client opens on a single repository's chronological graph. None tells a consequential commit from a trivial one.</p>
+  </div>
+  <div style="border: 1px solid var(--line); border-radius: 16px; background: var(--surface); overflow: hidden">
+    <table style="width: 100%; border-collapse: collapse; font-size: 15px">
+      <thead>
+        <tr style="background: var(--surface-soft); border-bottom: 1px solid var(--line); font-size: 13px; color: var(--muted)">
+          <th scope="col" style="text-align: left; padding: 16px 24px; font-weight: 500">Capability</th>
+          <th scope="col" style="padding: 16px 12px; font-weight: 700; color: var(--ink); background: var(--blue-tint)">Diff Digest</th>
+          <th scope="col" style="padding: 16px 12px; font-weight: 500">GitKraken</th>
+          <th scope="col" style="padding: 16px 12px; font-weight: 500">GitHub Desktop</th>
+          <th scope="col" style="padding: 16px 12px; font-weight: 500">Sourcetree</th>
+          <th scope="col" style="padding: 16px 12px; font-weight: 500">Tower</th>
+          <th scope="col" style="padding: 16px 12px; font-weight: 500">Fork</th>
+          <th scope="col" style="padding: 16px 12px; font-weight: 500">Sublime Merge</th>
+        </tr>
+      </thead>
+      <tbody style="text-align: center">
+        {rows.map((row) => (
+          <tr style="border-bottom: 1px solid var(--line-soft)">
+            <th scope="row" style="text-align: left; padding: 16px 24px; font-weight: 500; color: var(--ink)">{row.cap}</th>
+            <td style="padding: 16px 12px; background: var(--blue-soft); color: var(--accent); font-size: 18px; font-weight: 700">●</td>
+            <td style="padding: 16px 12px; color: var(--muted); font-size: 18px">{row.a}</td>
+            <td style="padding: 16px 12px; color: var(--muted); font-size: 18px">{row.b}</td>
+            <td style="padding: 16px 12px; color: var(--muted); font-size: 18px">{row.c}</td>
+            <td style="padding: 16px 12px; color: var(--muted); font-size: 18px">{row.d}</td>
+            <td style="padding: 16px 12px; color: var(--muted); font-size: 18px">{row.e}</td>
+            <td style="padding: 16px 12px; color: var(--muted); font-size: 18px">{row.f}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <div style="display: flex; justify-content: space-between; font-size: 13px; color: var(--muted)">
+    <span>● Supported · ◐ Partial · — Not available. Assessed against publicly documented behavior as of September 2026.</span>
+    <a href="https://www.gitclear.com/download_diff_digest#viewer_comparison">Full ten-client matrix with notes ↗</a>
+  </div>
+</section>

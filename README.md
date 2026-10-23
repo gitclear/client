@@ -56,21 +56,33 @@ charts, comparison entries, and pricing copy also follow the supplied design.
 
 ## Deploy to Cloudflare
 
+Pushing to `master` deploys the site. The repository is connected to Cloudflare
+Workers Builds, which runs `npm run build` and then `npx wrangler deploy`, using
+the Node version in `.nvmrc`. Build logs are under the `gitclient` Worker's
+**Deployments** tab.
+
+To deploy by hand instead:
+
 ```sh
 npx wrangler login
 npm run deploy
 ```
 
-This builds and uploads `dist/` to the `gitclient` Worker. No Worker script is
-needed. Initially the site is available at the workers.dev URL reported by Wrangler.
-To serve gitclient.com, add it under the Worker's **Settings → Domains & Routes →
-Add → Custom Domain** after the domain's DNS is managed by Cloudflare.
-`astro.config.mjs` already sets https://gitclient.com as the canonical site URL;
-that setting alone does not configure DNS or attach the domain.
+Either way, `dist/` is uploaded to the `gitclient` Worker; no Worker script is
+needed. The `routes` in `wrangler.jsonc` attach gitclient.com and
+www.gitclient.com as custom domains, and each deploy keeps their DNS records and
+certificates in place. Because custom domains are set, the workers.dev URL is
+disabled.
 
-For Git-based deployment, connect this repository to Cloudflare Workers Builds:
-use `npm run build` as the build command and `npx wrangler deploy` as the deploy
-command. Set `NODE_VERSION` to `24` in the build environment.
+https://gitclient.com is the canonical URL (also `site` in `astro.config.mjs`).
+Two settings in the Cloudflare dashboard enforce it, outside this repository:
+
+- **Rules → Redirect Rules → "Redirect www to gitclient.com"**: 301 from
+  `http*://www.gitclient.com/*` to `https://gitclient.com/${2}`, preserving the
+  query string.
+- **SSL/TLS → Edge Certificates → Always Use HTTPS**: 301 from http to https.
+
+Analytics are Plausible, loaded in `src/layouts/SiteLayout.astro`.
 
 Static asset requests are [free and unlimited](https://developers.cloudflare.com/workers/static-assets/billing-and-limitations/)
 on the Workers Free plan. A future Worker script for APIs or server rendering has

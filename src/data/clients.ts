@@ -224,9 +224,9 @@ export const clients: Client[] = [
     "cta": "Download GitKraken",
     "shots": [
       {
-        "what": "annotated window layout",
-        "file": "gitkraken-sample-interface.png",
-        "caption": "Annotated overview of the repository sidebar, commit graph, and commit panel. Workspaces sit on a separate tab."
+        "what": "commit graph and branch sidebar",
+        "file": "gitkraken-commit-graph.webp",
+        "caption": "GitKraken’s official Commit Graph example with the branch sidebar and work-in-progress nodes. The commit detail panel is outside this crop."
       },
       {
         "what": "full-screen diff",
@@ -598,8 +598,8 @@ export const clients: Client[] = [
     "shots": [
       {
         "what": "commit graph",
-        "file": "New capture needed",
-        "caption": "The commit graph in the built-in light theme."
+        "file": "sourcegit-commit-graph.webp",
+        "caption": "SourceGit’s official light-theme example, with a branch sidebar, commit graph, and selected-commit details."
       }
     ]
   },
@@ -642,8 +642,8 @@ export const clients: Client[] = [
     "shots": [
       {
         "what": "History list",
-        "file": "New capture needed",
-        "caption": "History as a flat list, one repository at a time."
+        "file": "github-desktop-history-list.webp",
+        "caption": "History as a flat list with a selected code diff, captured in a local demo repository."
       }
     ]
   },
@@ -687,8 +687,8 @@ export const clients: Client[] = [
     "shots": [
       {
         "what": "virtual branch lanes",
-        "file": "New capture needed",
-        "caption": "Virtual branches as parallel lanes in one working directory."
+        "file": "gitbutler-virtual-branch-lanes.webp",
+        "caption": "GitButler’s official example of three parallel branch lanes, with assigned and unassigned changes."
       }
     ]
   }

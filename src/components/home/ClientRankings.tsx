@@ -3,6 +3,7 @@ import GitInstaller from '../GitInstaller';
 import { dimensions, presets, type PlatformFilter, type Weights } from '../../data/clients';
 import { rankedReviews } from '../../lib/rankings';
 import { CompactReview, FullReview, MediumReview, RankChange } from './ClientReview';
+import ClientIcon from './ClientIcon';
 
 export default function ClientRankings({ currentYear }: { currentYear: number }) {
   const [weights, setWeights] = useState<Weights>(presets[0].w);
@@ -23,7 +24,7 @@ export default function ClientRankings({ currentYear }: { currentYear: number })
           {reviews.map(({ client, rank }) => <li key={client.id}>
             <a href={`#c-${client.id}`} aria-label={`${client.name}, ranked ${rank} of 11`}>
               <span className="tile-rank" aria-hidden="true">{rank}</span>
-              <span className="tile-initials" aria-hidden="true">{client.initials}</span>
+              <ClientIcon client={client} tile />
               <span className="tile-name" aria-hidden="true">{client.name}</span>
             </a>
           </li>)}

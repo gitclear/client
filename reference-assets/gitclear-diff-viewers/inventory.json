@@ -2,24 +2,32 @@
   "sourcePage": "https://www.gitclear.com/best_git_diff_viewers_2026",
   "retrievedAt": "2026-11-04T15:06:51.667Z",
   "summary": {
-    "screenshotsRetrieved": 21,
-    "appsWithScreenshots": 8,
-    "screenshotsNeeded": 3,
-    "appIconsNeeded": 11,
-    "supportingImagesRetrieved": 6,
+    "screenshotsRetrieved": 25,
+    "appsWithScreenshots": 11,
+    "screenshotsNeeded": 0,
+    "appIconsRetrieved": 11,
+    "appIconsNeeded": 0,
+    "supportingImagesRetrieved": 7,
     "inlineSvgRetrieved": 1,
-    "unavailableSupportingImages": 1,
+    "unavailableSupportingImages": 0,
+    "unavailableOriginalAssets": 1,
+    "replacedSupportingImages": 1,
     "recommendedReplacementCaptures": 1
   },
   "assets": [
     {
       "sourceUrl": "http://images.gitclear.com/uploads/remote_images/1528239594-377033-0001-6953.png",
-      "file": "reference-assets/gitclear-diff-viewers/1528239594-377033-0001-6953.png",
+      "file": "reference-assets/gitclear-diff-viewers/gitclear-organization-logo.svg",
       "kind": "supporting",
-      "alt": "",
-      "status": "unavailable",
-      "reason": "Original host does not resolve. The corresponding object on the S3 host declared by the article returns HTTP 403.",
-      "fallbackUrl": "https://s3.us-west-1.amazonaws.com/images.gitclear.com/uploads/remote_images/1528239594-377033-0001-6953.png"
+      "alt": "GitClear organization logo (official replacement for the unavailable legacy metadata logo)",
+      "status": "replaced",
+      "reason": "The legacy organization logo URL remains unavailable (asset host and declared S3 fallback return HTTP 403). A working official GitClear logo SVG is stored as its replacement; it is not the original file.",
+      "fallbackUrl": "https://s3.us-west-1.amazonaws.com/images.gitclear.com/uploads/remote_images/1528239594-377033-0001-6953.png",
+      "requestedFile": "reference-assets/gitclear-diff-viewers/1528239594-377033-0001-6953.png",
+      "replacementSourceUrl": "https://www.gitclear.com/svg/gitclear_logo_blue.svg",
+      "retrievedAt": "2026-11-04T15:34:40.724834Z",
+      "bytes": 9451,
+      "sha256": "587d2a4ecd87d50a846ae35396355d440ab4433d390b794d3bcd1b976ab01fde"
     },
     {
       "sourceUrl": "https://asset.gitclear.com/assets/content/bill-author-e9bed27481e0e09e920347c08194d2f3377ef78fa9b3c124e7d1b1109ac860c2.jpg",
@@ -286,6 +294,245 @@
       "alt": "GitClear header logo",
       "status": "retrieved",
       "bytes": 9285
+    },
+    {
+      "sourceUrl": "https://asset.gitclear.com/assets/logos/diff_digest_logo-1e39ca146e01d5e8319669b8f6fc3c8ceaaebddd1719ed9b242b59223a35cb2a.svg",
+      "sourcePage": "https://www.gitclear.com/download_diff_digest",
+      "file": "public/images/clients/icons/diff-digest.svg",
+      "kind": "app-icon",
+      "app": "Diff Digest",
+      "alt": "Diff Digest official logo",
+      "width": 27,
+      "height": 24,
+      "status": "retrieved",
+      "retrievedAt": "2026-11-04T15:34:40.724834Z",
+      "bytes": 3996,
+      "sha256": "901017cac6595f429f2ebf19220844d2c62c3c35aa6f899837067b43c870f6b9",
+      "note": "Official Diff Digest mark extracted from the logo SVG by removing its wordmark groups and narrowing the viewBox; mark paths and gradient are unchanged."
+    },
+    {
+      "sourceUrl": "https://help.gitkraken.com/wp-content/uploads/gitkraken-client-icon-hifidelity.png",
+      "sourcePage": "https://help.gitkraken.com/gitkraken-desktop/interface/",
+      "file": "public/images/clients/icons/gitkraken.png",
+      "kind": "app-icon",
+      "app": "GitKraken",
+      "alt": "GitKraken official logo",
+      "width": 662,
+      "height": 662,
+      "status": "retrieved",
+      "retrievedAt": "2026-11-04T15:34:40.724834Z",
+      "bytes": 194191,
+      "sha256": "36edcbd21e090f8c579bcbb3b9d2eb7798cb1842d7842b8fe0462bca9e23f0ea"
+    },
+    {
+      "sourceUrl": "https://git-fork.com/images/logo.png",
+      "sourcePage": "https://git-fork.com/",
+      "file": "public/images/clients/icons/fork.png",
+      "kind": "app-icon",
+      "app": "Fork",
+      "alt": "Fork official logo",
+      "width": 256,
+      "height": 256,
+      "status": "retrieved",
+      "retrievedAt": "2026-11-04T15:34:40.724834Z",
+      "bytes": 49736,
+      "sha256": "3656877aa0eb2d4a9c4744427f2d86d0ff2eeaf8e8e41ceca97d05401764be7f"
+    },
+    {
+      "sourceUrl": "https://www.git-tower.com/assets/img/icons/downloads-modal-app-icon.1793629138.png",
+      "sourcePage": "https://www.git-tower.com/",
+      "file": "public/images/clients/icons/tower.png",
+      "kind": "app-icon",
+      "app": "Tower",
+      "alt": "Tower official logo",
+      "width": 340,
+      "height": 340,
+      "status": "retrieved",
+      "retrievedAt": "2026-11-04T15:34:40.724834Z",
+      "bytes": 245928,
+      "sha256": "05cf7a82b45b10254efc44b7611cd725206827c5351723569d039f67027fce18"
+    },
+    {
+      "sourceUrl": "https://www.smartgit.dev/images/favicon.svg",
+      "sourcePage": "https://www.smartgit.dev/",
+      "file": "public/images/clients/icons/smartgit.svg",
+      "kind": "app-icon",
+      "app": "SmartGit",
+      "alt": "SmartGit official logo",
+      "width": 1000,
+      "height": 1000,
+      "status": "retrieved",
+      "retrievedAt": "2026-11-04T15:34:40.724834Z",
+      "bytes": 5662,
+      "sha256": "bc7ed59cefc64908b83954a04a6f8864a1852202c7d90d67855d345a3ba8cffe",
+      "note": "Official SmartGit website favicon used as product branding; supports the source’s light/dark color-scheme styles."
+    },
+    {
+      "sourceUrl": "https://www.sublimehq.com/images/sublime_merge_stripe.svg",
+      "sourcePage": "https://www.sublimemerge.com/",
+      "file": "public/images/clients/icons/sublime-merge.svg",
+      "kind": "app-icon",
+      "app": "Sublime Merge",
+      "alt": "Sublime Merge official logo",
+      "width": 128,
+      "height": 128,
+      "status": "retrieved",
+      "retrievedAt": "2026-11-04T15:34:40.724834Z",
+      "bytes": 1435,
+      "sha256": "3a7547e196b673132d70933e096f6de27092d6e84b9b2c16f7712278fe6d20c3"
+    },
+    {
+      "sourceUrl": "https://user-images.githubusercontent.com/8456633/174470852-339b5011-5800-4bb9-a628-ff230aa8cd4e.png",
+      "sourcePage": "https://github.com/jesseduffield/lazygit",
+      "file": "public/images/clients/icons/lazygit.png",
+      "kind": "app-icon",
+      "app": "Lazygit",
+      "alt": "Lazygit official logo",
+      "width": 1072,
+      "height": 1090,
+      "status": "retrieved",
+      "retrievedAt": "2026-11-04T15:34:40.724834Z",
+      "bytes": 97715,
+      "sha256": "e74269c0686a158dcaedcd84d9bf91a774b9179851033afa57a5e94de8fbf48a",
+      "note": "Official README mascot and wordmark, preserved as published. The project does not publish a separate square app icon in its source tree; this image has a white background."
+    },
+    {
+      "sourceUrl": "https://wac-cdn.atlassian.com/dam/jcr:f32681c1-355d-4806-b29c-319b0c6ecb06/Sourcetree-blue.svg?cdnVersion=3108",
+      "sourcePage": "https://www.sourcetreeapp.com/",
+      "file": "public/images/clients/icons/sourcetree.svg",
+      "kind": "app-icon",
+      "app": "Sourcetree",
+      "alt": "Sourcetree official logo",
+      "width": 57,
+      "height": 72,
+      "status": "retrieved",
+      "retrievedAt": "2026-11-04T15:34:40.724834Z",
+      "bytes": 1208,
+      "sha256": "f3eca8c9291b5de2c4b313dbce9a2342a4e1117861c64e6db4201d5a88bae09f",
+      "note": "Official blue product mark extracted from the vendor wordmark SVG by removing only text paths and narrowing the viewBox; mark paths and gradients are unchanged."
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/sourcegit-scm/sourcegit/c0f40a2e78d81a7474628847727644fc0c56f558/build/resources/_common/icons/sourcegit.png",
+      "sourcePage": "https://github.com/sourcegit-scm/sourcegit",
+      "file": "public/images/clients/icons/sourcegit.png",
+      "kind": "app-icon",
+      "app": "SourceGit",
+      "alt": "SourceGit official logo",
+      "width": 256,
+      "height": 256,
+      "status": "retrieved",
+      "retrievedAt": "2026-11-04T15:34:40.724834Z",
+      "bytes": 37445,
+      "sha256": "70867f2de9eda6de89f09a63761f41c4c087aed640b4f541366cf3d04a904546"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/desktop/desktop/d17c860dfa8192a3832e799bbadb0a969cbf2374/app/static/common/logo-64x64@2x.png",
+      "sourcePage": "https://github.com/desktop/desktop",
+      "file": "public/images/clients/icons/github-desktop.png",
+      "kind": "app-icon",
+      "app": "GitHub Desktop",
+      "alt": "GitHub Desktop official logo",
+      "width": 128,
+      "height": 128,
+      "status": "retrieved",
+      "retrievedAt": "2026-11-04T15:34:40.724834Z",
+      "bytes": 51939,
+      "sha256": "e46ed2e5d094f4393ecbe4979efe9da6c13caf47e1c5a8d1e5f5df9afd136892"
+    },
+    {
+      "sourceUrl": "https://gitbutler.com/favicon/favicon.svg",
+      "sourcePage": "https://gitbutler.com/",
+      "file": "public/images/clients/icons/gitbutler.svg",
+      "kind": "app-icon",
+      "app": "GitButler",
+      "alt": "GitButler official logo",
+      "width": 16,
+      "height": 16,
+      "status": "retrieved",
+      "retrievedAt": "2026-11-04T15:34:40.724834Z",
+      "bytes": 479,
+      "sha256": "c6d5b8a1c2c40d7899038d6a25c37236b94799a59eea83e39edd1c38cf682147",
+      "note": "Official current GitButler website SVG favicon, preserved as published."
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/sourcegit-scm/sourcegit/master/screenshots/theme_light.png",
+      "sourcePage": "https://github.com/sourcegit-scm/sourcegit",
+      "file": "public/images/clients/sourcegit-commit-graph.webp",
+      "kind": "screenshot",
+      "app": "SourceGit",
+      "alt": "SourceGit in its light theme with local branches, remotes, a colored commit graph, and information about the selected commit.",
+      "width": 2784,
+      "height": 1664,
+      "status": "retrieved",
+      "retrievedAt": "2026-11-04T15:34:40.724834Z",
+      "note": "Official project screenshot of the SourceGit repository. The selected commit’s Information tab is open, including its changed-file list; this is not the controlled shared demo repository.",
+      "bytes": 141416,
+      "sha256": "7b3889bb1c7d14db227dff445daef35fd851552419bed204bf79feec316f3a1a",
+      "capture": {
+        "method": "official-published-screenshot",
+        "conversion": "lossless WebP, original pixel dimensions"
+      }
+    },
+    {
+      "sourceUrl": "https://desktop.github.com/",
+      "sourcePage": "https://docs.github.com/en/desktop/making-changes-in-a-branch/viewing-the-branch-history-in-github-desktop",
+      "file": "public/images/clients/github-desktop-history-list.webp",
+      "kind": "screenshot",
+      "app": "GitHub Desktop",
+      "alt": "GitHub Desktop History tab showing six commits and the selected task-filter change as a TypeScript diff.",
+      "width": 1301,
+      "height": 906,
+      "status": "retrieved",
+      "retrievedAt": "2026-11-04T15:34:40.724834Z",
+      "note": "Captured from the installed GitHub Desktop app using a synthetic local repository. Full app window at native 1301 × 906 pixels; no upscaling or code substitution. Converted to lossless WebP from the screenshot API’s JPEG output.",
+      "bytes": 138064,
+      "sha256": "e0c7be98aff7d1483c930f22452045cfa81871e142b9ca345ab1133e44f40e0b",
+      "capture": {
+        "method": "native-app-screenshot",
+        "application": "GitHub Desktop",
+        "applicationVersion": "3.6.5",
+        "sampleRepository": "git-client-demo",
+        "selectedCommit": "43d36c49be4da514fd459c6806c2dfc3e6630e8d",
+        "repositoryBundle": "reference-assets/gitclear-diff-viewers/github-desktop-demo.bundle"
+      }
+    },
+    {
+      "sourceUrl": "https://d2m1ukvwmu7gz4.cloudfront.net/vbranch-ex.png",
+      "sourcePage": "https://docs.gitbutler.com/features/branch-management/virtual-branches",
+      "file": "public/images/clients/gitbutler-virtual-branch-lanes.webp",
+      "kind": "screenshot",
+      "app": "GitButler",
+      "alt": "GitButler with three parallel branch lanes containing commits and assigned changes, beside an Unassigned changes column.",
+      "width": 2828,
+      "height": 1658,
+      "status": "retrieved",
+      "retrievedAt": "2026-11-04T15:34:40.724834Z",
+      "note": "Official GitButler documentation screenshot using the vendor’s sample repository, preserved at full resolution and converted to lossless WebP.",
+      "bytes": 954660,
+      "sha256": "7539e6a917cb9f37fc8cdb3cf7e845743548e99c5ad88a61afcf890f1e90fa2b",
+      "capture": {
+        "method": "official-published-screenshot",
+        "conversion": "lossless WebP, original pixel dimensions"
+      }
+    },
+    {
+      "sourceUrl": "https://www.gitkraken.com/wp-content/uploads/2026/08/GKD-124-commit-graph.png",
+      "sourcePage": "https://www.gitkraken.com/git-client",
+      "file": "public/images/clients/gitkraken-commit-graph.webp",
+      "kind": "screenshot",
+      "app": "GitKraken",
+      "alt": "GitKraken Desktop’s branch sidebar and commit graph with colored branch lines, author avatars, and work-in-progress nodes.",
+      "width": 1560,
+      "height": 831,
+      "status": "retrieved",
+      "retrievedAt": "2026-11-04T15:34:40.724834Z",
+      "note": "Clean vendor graph image replaces the annotated diagram as lead image. This remains a crop with a decorative outline and footer caption; the selected-commit detail panel is not visible. A complete unannotated app-window capture remains recommended.",
+      "bytes": 181656,
+      "sha256": "07a0d4b6fab611eaddef96d1d18dfbd3bc6a58ba33700da00a08e2b6cd3d99d0",
+      "capture": {
+        "method": "official-published-screenshot",
+        "conversion": "lossless WebP, original pixel dimensions"
+      }
     }
   ],
   "clientCoverage": [
@@ -306,19 +553,30 @@
         }
       ],
       "icon": {
-        "status": "needed",
-        "suggestedFile": "diff-digest.svg"
+        "status": "retrieved",
+        "file": "diff-digest.svg",
+        "localPath": "public/images/clients/icons/diff-digest.svg",
+        "sourceUrl": "https://asset.gitclear.com/assets/logos/diff_digest_logo-1e39ca146e01d5e8319669b8f6fc3c8ceaaebddd1719ed9b242b59223a35cb2a.svg",
+        "note": "Official Diff Digest mark extracted from the logo SVG by removing its wordmark groups and narrowing the viewBox; mark paths and gradient are unchanged."
       }
     },
     {
       "app": "GitKraken",
       "screenshots": [
         {
+          "view": "commit graph and branch sidebar",
+          "file": "gitkraken-commit-graph.webp",
+          "status": "retrieved",
+          "localPath": "public/images/clients/gitkraken-commit-graph.webp",
+          "sourceUrl": "https://www.gitkraken.com/wp-content/uploads/2026/08/GKD-124-commit-graph.png",
+          "note": "Clean vendor graph image replaces the annotated diagram as lead image. This remains a crop with a decorative outline and footer caption; the selected-commit detail panel is not visible. A complete unannotated app-window capture remains recommended."
+        },
+        {
           "view": "annotated window layout",
           "file": "gitkraken-sample-interface.png",
           "status": "retrieved",
           "localPath": "public/images/clients/gitkraken-sample-interface.png",
-          "note": "Temporary lead image; a clean, unannotated Commit Graph screenshot is recommended."
+          "note": "Archived annotated diagram; no longer used as the lead image."
         },
         {
           "view": "full-screen diff",
@@ -335,8 +593,10 @@
         }
       ],
       "icon": {
-        "status": "needed",
-        "suggestedFile": "gitkraken.svg"
+        "status": "retrieved",
+        "file": "gitkraken.png",
+        "localPath": "public/images/clients/icons/gitkraken.png",
+        "sourceUrl": "https://help.gitkraken.com/wp-content/uploads/gitkraken-client-icon-hifidelity.png"
       }
     },
     {
@@ -362,8 +622,10 @@
         }
       ],
       "icon": {
-        "status": "needed",
-        "suggestedFile": "fork.svg"
+        "status": "retrieved",
+        "file": "fork.png",
+        "localPath": "public/images/clients/icons/fork.png",
+        "sourceUrl": "https://git-fork.com/images/logo.png"
       }
     },
     {
@@ -389,8 +651,10 @@
         }
       ],
       "icon": {
-        "status": "needed",
-        "suggestedFile": "tower.svg"
+        "status": "retrieved",
+        "file": "tower.png",
+        "localPath": "public/images/clients/icons/tower.png",
+        "sourceUrl": "https://www.git-tower.com/assets/img/icons/downloads-modal-app-icon.1793629138.png"
       }
     },
     {
@@ -410,8 +674,11 @@
         }
       ],
       "icon": {
-        "status": "needed",
-        "suggestedFile": "smartgit.svg"
+        "status": "retrieved",
+        "file": "smartgit.svg",
+        "localPath": "public/images/clients/icons/smartgit.svg",
+        "sourceUrl": "https://www.smartgit.dev/images/favicon.svg",
+        "note": "Official SmartGit website favicon used as product branding; supports the source’s light/dark color-scheme styles."
       }
     },
     {
@@ -437,8 +704,10 @@
         }
       ],
       "icon": {
-        "status": "needed",
-        "suggestedFile": "sublime-merge.svg"
+        "status": "retrieved",
+        "file": "sublime-merge.svg",
+        "localPath": "public/images/clients/icons/sublime-merge.svg",
+        "sourceUrl": "https://www.sublimehq.com/images/sublime_merge_stripe.svg"
       }
     },
     {
@@ -464,8 +733,11 @@
         }
       ],
       "icon": {
-        "status": "needed",
-        "suggestedFile": "lazygit.svg"
+        "status": "retrieved",
+        "file": "lazygit.png",
+        "localPath": "public/images/clients/icons/lazygit.png",
+        "sourceUrl": "https://user-images.githubusercontent.com/8456633/174470852-339b5011-5800-4bb9-a628-ff230aa8cd4e.png",
+        "note": "Official README mascot and wordmark, preserved as published. The project does not publish a separate square app icon in its source tree; this image has a white background."
       }
     },
     {
@@ -485,53 +757,69 @@
         }
       ],
       "icon": {
-        "status": "needed",
-        "suggestedFile": "sourcetree.svg"
+        "status": "retrieved",
+        "file": "sourcetree.svg",
+        "localPath": "public/images/clients/icons/sourcetree.svg",
+        "sourceUrl": "https://wac-cdn.atlassian.com/dam/jcr:f32681c1-355d-4806-b29c-319b0c6ecb06/Sourcetree-blue.svg?cdnVersion=3108",
+        "note": "Official blue product mark extracted from the vendor wordmark SVG by removing only text paths and narrowing the viewBox; mark paths and gradients are unchanged."
       }
     },
     {
       "app": "SourceGit",
       "screenshots": [
         {
-          "view": "commit graph",
-          "file": "New capture needed",
-          "status": "capture-needed",
-          "suggestedFile": "sourcegit-commit-graph.webp"
+          "view": "light-theme commit graph and selected-commit details",
+          "file": "sourcegit-commit-graph.webp",
+          "status": "retrieved",
+          "localPath": "public/images/clients/sourcegit-commit-graph.webp",
+          "sourceUrl": "https://raw.githubusercontent.com/sourcegit-scm/sourcegit/master/screenshots/theme_light.png",
+          "note": "Official project screenshot of the SourceGit repository. The selected commit’s Information tab is open, including its changed-file list; this is not the controlled shared demo repository."
         }
       ],
       "icon": {
-        "status": "needed",
-        "suggestedFile": "sourcegit.svg"
+        "status": "retrieved",
+        "file": "sourcegit.png",
+        "localPath": "public/images/clients/icons/sourcegit.png",
+        "sourceUrl": "https://raw.githubusercontent.com/sourcegit-scm/sourcegit/c0f40a2e78d81a7474628847727644fc0c56f558/build/resources/_common/icons/sourcegit.png"
       }
     },
     {
       "app": "GitHub Desktop",
       "screenshots": [
         {
-          "view": "History list",
-          "file": "New capture needed",
-          "status": "capture-needed",
-          "suggestedFile": "github-desktop-history-list.webp"
+          "view": "History list with a selected code diff",
+          "file": "github-desktop-history-list.webp",
+          "status": "retrieved",
+          "localPath": "public/images/clients/github-desktop-history-list.webp",
+          "sourceUrl": "https://desktop.github.com/",
+          "note": "Captured from the installed GitHub Desktop app using a synthetic local repository. Full app window at native 1301 × 906 pixels; no upscaling or code substitution. Converted to lossless WebP from the screenshot API’s JPEG output."
         }
       ],
       "icon": {
-        "status": "needed",
-        "suggestedFile": "github-desktop.svg"
+        "status": "retrieved",
+        "file": "github-desktop.png",
+        "localPath": "public/images/clients/icons/github-desktop.png",
+        "sourceUrl": "https://raw.githubusercontent.com/desktop/desktop/d17c860dfa8192a3832e799bbadb0a969cbf2374/app/static/common/logo-64x64@2x.png"
       }
     },
     {
       "app": "GitButler",
       "screenshots": [
         {
-          "view": "virtual branch lanes",
-          "file": "New capture needed",
-          "status": "capture-needed",
-          "suggestedFile": "gitbutler-virtual-branch-lanes.webp"
+          "view": "parallel branch lanes with assigned and unassigned changes",
+          "file": "gitbutler-virtual-branch-lanes.webp",
+          "status": "retrieved",
+          "localPath": "public/images/clients/gitbutler-virtual-branch-lanes.webp",
+          "sourceUrl": "https://d2m1ukvwmu7gz4.cloudfront.net/vbranch-ex.png",
+          "note": "Official GitButler documentation screenshot using the vendor’s sample repository, preserved at full resolution and converted to lossless WebP."
         }
       ],
       "icon": {
-        "status": "needed",
-        "suggestedFile": "gitbutler.svg"
+        "status": "retrieved",
+        "file": "gitbutler.svg",
+        "localPath": "public/images/clients/icons/gitbutler.svg",
+        "sourceUrl": "https://gitbutler.com/favicon/favicon.svg",
+        "note": "Official current GitButler website SVG favicon, preserved as published."
       }
     }
   ],
@@ -539,26 +827,36 @@
     "required": [
       {
         "app": "SourceGit",
-        "view": "Commit graph in the built-in light theme, with branch sidebar and a selected commit’s changes."
+        "view": "Commit graph in the built-in light theme, with branch sidebar and a selected commit’s changes.",
+        "status": "fulfilled",
+        "localPath": "public/images/clients/sourcegit-commit-graph.webp",
+        "note": "Official project screenshot of the SourceGit repository. The selected commit’s Information tab is open, including its changed-file list; this is not the controlled shared demo repository."
       },
       {
         "app": "GitHub Desktop",
-        "view": "History tab with commit list and a selected file’s diff."
+        "view": "History tab with commit list and a selected file’s diff.",
+        "status": "fulfilled",
+        "localPath": "public/images/clients/github-desktop-history-list.webp",
+        "note": "Captured from the installed GitHub Desktop app using a synthetic local repository. Full app window at native 1301 × 906 pixels; no upscaling or code substitution. Converted to lossless WebP from the screenshot API’s JPEG output."
       },
       {
         "app": "GitButler",
-        "view": "Parallel virtual-branch lanes with uncommitted changes visible."
+        "view": "Parallel virtual-branch lanes with uncommitted changes visible.",
+        "status": "fulfilled",
+        "localPath": "public/images/clients/gitbutler-virtual-branch-lanes.webp",
+        "note": "Official GitButler documentation screenshot using the vendor’s sample repository, preserved at full resolution and converted to lossless WebP."
       }
     ],
-    "consistency": "Use the same sample repository, branches, and commit window for the three new captures. Capture the full app window at 1440px wide or greater when possible; keep code and labels legible.",
-    "iconRequirements": "Official app icons for all eleven clients, ideally SVG or transparent PNG at least 96×96. The article supplies GitClear branding but no individual app icons.",
+    "consistency": "The three required screenshot slots are populated. SourceGit and GitButler use official published examples; GitHub Desktop uses a local synthetic demo. They do not share a sample repository or commit window. A future controlled comparison should recapture all apps against the same repository at 1440px wide or greater where possible.",
+    "iconRequirements": "All eleven clients have locally stored official app icons or official product branding in public/images/clients/icons/. SVG is retained when available. Lazygit uses its published README mascot/wordmark; SmartGit and GitButler use official website favicons. Provenance and any SVG mark extraction are documented per asset.",
     "optionalExtraViews": "Additional diff, staging, or repository-management views for the three missing apps may enrich their top-three review layout; the current page requires only one screenshot each.",
     "recommendedReplacements": [
       {
         "app": "GitKraken",
         "view": "A clean, unannotated Commit Graph capture, showing the complete app window with branch sidebar, graph, and selected commit details.",
-        "currentSubstitute": "gitkraken-sample-interface.png",
-        "reason": "The source’s gitkraken-history.webp is a cropped diff pane. The available sample-interface PNG is an annotated diagram."
+        "currentSubstitute": "gitkraken-commit-graph.webp",
+        "reason": "A clean official branch-sidebar/Commit Graph image replaces the annotated diagram. The vendor image is still cropped and omits selected-commit details, so a complete unannotated app-window capture remains an optional improvement.",
+        "status": "partially-fulfilled"
       }
     ]
   },
@@ -566,6 +864,12 @@
     "All 21 screenshots were decoded and visually inspected. Source filenames and descriptions are not always accurate.",
     "GitKraken’s file named gitkraken-history.webp is a cropped file diff, not a commit graph. The page uses its annotated layout as the lead image and labels the diff crop accurately.",
     "SmartGit’s file named smartgit-diff.jpg shows a working-tree/index file comparison; the source’s description of a CSS diff is inaccurate. Local alt text avoids the incorrect file-type claim.",
-    "Screenshots vary in theme, age, repository, size, and cropping; a consistent new capture set would improve visual consistency but is not required to fill the remaining slots."
-  ]
+    "Screenshots vary in theme, age, repository, size, and cropping; a consistent new capture set would improve visual consistency but is not required to fill the remaining slots.",
+    "All four added screenshot files and all eleven icon/branding files were decoded and visually inspected before being added. Original screenshots are preserved; only format conversion is applied.",
+    "GitHub Desktop is a real native app capture of a synthetic repository; SourceGit and GitButler are official published examples, not same-repository comparison captures.",
+    "GitKraken’s new lead image shows an actual Commit Graph and branch sidebar. It is still cropped and lacks the commit detail panel; the full-window recommendation is deliberately retained.",
+    "The unavailable legacy organization-logo image was referenced only by structured metadata in the article. Its official replacement is explicitly marked replaced, with the failed original URL and working replacement URL retained.",
+    "Diff Digest and Sourcetree SVG mark extraction removes only wordmark text/groups; original mark geometry and gradients are preserved. Lazygit’s white-background README logo is retained intact."
+  ],
+  "updatedAt": "2026-11-04T15:34:40.724834Z"
 }

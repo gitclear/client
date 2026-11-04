@@ -1,6 +1,7 @@
 import { dimensions, type Client, type Screenshot } from '../../data/clients';
 import type { RankedReview } from '../../lib/rankings';
 import screenshotManifest from '../../data/screenshot-assets.json';
+import ClientIcon from './ClientIcon';
 
 const platformNames = { mac: 'macOS', win: 'Windows', linux: 'Linux' };
 const screenshotAssets: Record<string, { width: number; height: number; alt: string }> = screenshotManifest;
@@ -58,7 +59,7 @@ export function FullReview({ review, platformName }: Props) {
   return <article id={`c-${client.id}`} className="client-review full-review" aria-labelledby={`t-${client.id}`}>
     <div className="full-review-heading">
       <div className="client-identity">
-        <span className="client-initials" aria-hidden="true">{client.initials}</span>
+        <ClientIcon client={client} />
         <div>
           <p className="rank-label">#{rank} for your weights</p>
           <h3 id={`t-${client.id}`}>{client.name}</h3>

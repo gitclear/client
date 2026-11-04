@@ -103,5 +103,25 @@
     "width": 1473,
     "height": 823,
     "alt": "Diff Digest's cross-repo activity feed showing commits from many repositories as impact-sized bubbles across five days"
+  },
+  "sourcegit-commit-graph.webp": {
+    "width": 2784,
+    "height": 1664,
+    "alt": "SourceGit in its light theme with local branches, remotes, a colored commit graph, and information about the selected commit."
+  },
+  "github-desktop-history-list.webp": {
+    "width": 1301,
+    "height": 906,
+    "alt": "GitHub Desktop History tab showing six commits and the selected task-filter change as a TypeScript diff."
+  },
+  "gitbutler-virtual-branch-lanes.webp": {
+    "width": 2828,
+    "height": 1658,
+    "alt": "GitButler with three parallel branch lanes containing commits and assigned changes, beside an Unassigned changes column."
+  },
+  "gitkraken-commit-graph.webp": {
+    "width": 1560,
+    "height": 831,
+    "alt": "GitKraken Desktop’s branch sidebar and commit graph with colored branch lines, author avatars, and work-in-progress nodes."
   }
 }

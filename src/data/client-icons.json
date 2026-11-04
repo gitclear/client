@@ -1,0 +1,57 @@
+{
+  "diff-digest": {
+    "file": "diff-digest.svg",
+    "width": 27,
+    "height": 24
+  },
+  "gitkraken": {
+    "file": "gitkraken.png",
+    "width": 662,
+    "height": 662
+  },
+  "fork": {
+    "file": "fork.png",
+    "width": 256,
+    "height": 256
+  },
+  "tower": {
+    "file": "tower.png",
+    "width": 340,
+    "height": 340
+  },
+  "smartgit": {
+    "file": "smartgit.svg",
+    "width": 1000,
+    "height": 1000
+  },
+  "sublime-merge": {
+    "file": "sublime-merge.svg",
+    "width": 128,
+    "height": 128
+  },
+  "lazygit": {
+    "file": "lazygit.png",
+    "width": 1072,
+    "height": 1090
+  },
+  "sourcetree": {
+    "file": "sourcetree.svg",
+    "width": 57,
+    "height": 72
+  },
+  "sourcegit": {
+    "file": "sourcegit.png",
+    "width": 256,
+    "height": 256
+  },
+  "github-desktop": {
+    "file": "github-desktop.png",
+    "width": 128,
+    "height": 128
+  },
+  "gitbutler": {
+    "file": "gitbutler.svg",
+    "width": 16,
+    "height": 16
+  }
+}

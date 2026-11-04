@@ -45,7 +45,8 @@
 .home-page .hero-tiles a { position: relative; display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 16px 8px 12px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); color: var(--ink); text-decoration: none; }
 .home-page .hero-tiles a:hover { border-color: var(--accent); }
 .home-page .tile-rank { position: absolute; top: 8px; left: 10px; font: 11px var(--home-mono); color: var(--muted); }
-.home-page .tile-initials { display: flex; align-items: center; justify-content: center; box-sizing: content-box; width: 48px; height: 48px; border: 1px dashed #c4bcac; border-radius: 12px; background: var(--page); color: #57534b; font: 19px var(--home-serif); }
+.home-page .tile-icon { display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; }
+.home-page .tile-icon img, .home-page .client-icon img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .home-page .tile-name { font-size: 13px; font-weight: 500; text-align: center; line-height: 1.25; }
 .home-page .order-note { margin-top: 12px; color: var(--muted); font-size: 14px; }
 .home-page .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
@@ -131,7 +132,7 @@
 .home-page .full-review-heading { display: flex; flex-wrap: wrap; gap: 20px 32px; align-items: flex-start; justify-content: space-between; }
 .home-page .client-identity { display: flex; gap: 20px; align-items: flex-start; flex: 1 1 440px; min-width: 0; }
 .home-page .client-identity > div { min-width: 0; }
-.home-page .client-initials { flex: none; display: flex; align-items: center; justify-content: center; box-sizing: content-box; width: 72px; height: 72px; border-radius: 18px; border: 1px dashed #c4bcac; background: var(--page); font: 26px var(--home-serif); color: #57534b; }
+.home-page .client-icon { flex: none; display: flex; align-items: center; justify-content: center; width: 72px; height: 72px; }
 .home-page .rank-label { font: 13px var(--home-mono); color: var(--muted); }
 .home-page .full-review h3 { margin: 4px 0 8px; font-size: clamp(32px, 3.6vw, 44px); font-weight: 400; line-height: 1.05; letter-spacing: -.01em; }
 .home-page .client-vendor { font-size: 16px; line-height: 1.5; color: #57534b; }
@@ -257,7 +258,7 @@
   .home-page .live-ranking li > a { font-size: 14px; }
   .home-page .client-rubric { gap: 8px 18px; }
   .home-page .client-identity { gap: 14px; }
-  .home-page .client-initials { width: 54px; height: 54px; border-radius: 14px; }
+  .home-page .client-icon { width: 54px; height: 54px; }
   .home-page .client-score > p { font-size: 48px; }
   .home-page .client-rubric > div { font-size: 12px; gap: 6px; }
   .home-page .score-pips { gap: 2px; }

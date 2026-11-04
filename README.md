@@ -55,16 +55,31 @@ import InteractiveWidget from '../components/InteractiveWidget';
 `client:load` loads it immediately. Omit the directive for static HTML. The page
 content and download links work without JavaScript. See [Astro's React integration](https://docs.astro.build/en/guides/integrations-guide/react/).
 
-The 21 available app screenshots from GitClear’s source article are stored in
-`public/images/clients/`, with dimensions and alt text in
-`src/data/screenshot-assets.json`. The page renders them in every review tier;
-clicking a screenshot opens the original resolution. SourceGit, GitHub Desktop,
-and GitButler still need screenshots, and all eleven app icons remain initials.
-GitKraken uses an annotated layout as its lead image until a clean Commit Graph
-capture is available: the article’s `gitkraken-history.webp` is actually a diff crop.
+The 25 app screenshots in `public/images/clients/` include the 21 images from
+GitClear’s source article, official SourceGit and GitButler examples, a native
+GitHub Desktop History capture of a synthetic demo repository, and a clean
+GitKraken Commit Graph image. Dimensions and alt text live in
+`src/data/screenshot-assets.json`; every review tier renders the images, and
+clicking a screenshot opens its original resolution. All eleven clients use
+local official app icons or product branding from `public/images/clients/icons/`,
+mapped by `src/data/client-icons.json`. Lazygit uses its intact README logo;
+SmartGit and GitButler use their official website favicons. Diff Digest and
+Sourcetree use the icon marks extracted from their official SVG wordmarks.
+
 `reference-assets/gitclear-diff-viewers/inventory.json` records source URLs,
-retrieval results, and the remaining capture checklist. Supporting article
-artwork is archived alongside that inventory. Reviews, pricing, platform
+dimensions, checksums, transformations, and capture limitations. The new
+screenshots use different repositories; they are not a controlled same-repo
+comparison. GitKraken’s lead image now shows its graph and branch sidebar, but
+the vendor image is cropped: a complete unannotated window with selected-commit
+details remains an optional capture improvement. The article’s file named
+`gitkraken-history.webp` is still correctly labeled as a diff crop.
+
+Supporting article artwork is archived alongside the inventory. The legacy
+organization-logo URL returns HTTP 403, so an official GitClear SVG is stored
+as an explicitly documented replacement. `github-desktop-demo.bundle` contains
+the synthetic repository used for the native capture; reproduce it with
+`git clone reference-assets/gitclear-diff-viewers/github-desktop-demo.bundle /tmp/git-client-demo`.
+Reviews, pricing, platform
 availability, and vendor download destinations follow the reference; SourceGit’s
 scores remain labeled provisional. Home-page styles are isolated from the auxiliary routes.
 

@@ -1,0 +1,45 @@
+---
+const tasks = [
+  ['Stage a hunk and commit it', 'A git client'],
+  ['Rebase, cherry-pick, resolve a conflict', 'A git client'],
+  ['Read what changed in one file', 'Either'],
+  ['See what changed across five repos since Friday', 'A diff viewer'],
+  ['Tell a moved function from a rewritten one', 'A diff viewer'],
+  ['See which lines an agent wrote', 'A diff viewer'],
+];
+---
+
+<section id="client-vs-viewer" class="home-container client-vs-viewer" aria-labelledby="cvv-title">
+  <div class="viewer-copy">
+    <h2 id="cvv-title">Git client or git diff viewer? Mostly the same purchase.</h2>
+    <p>You almost certainly have a git client already. macOS installs one with Apple’s Command Line Tools, most Linux distributions ship one, and Windows is a single command away (the card at the top of this page has it). So when people search for a “git client,” they’re rarely after another way to type <code>git commit</code>. They want to see what git is doing: where the branches are, what changed, and whether it mattered.</p>
+    <p>Seeing what changed is the job of a diff viewer. The two used to be separate purchases. Today every client on this page includes a diff viewer, and the newest diff viewers browse history the way clients do. The difference worth knowing is which half of the work a tool was built around: operating git, or understanding change.</p>
+    <p>Most developers end up with one of each, a client that fits their hands and a viewer for the reading. The weights above let you score whichever half fills your day.</p>
+  </div>
+  <div class="viewer-examples">
+    <div class="viewer-terminal" role="img" aria-label="Terminal: git diff --stat reports 41 files changed with 912 insertions and 887 deletions, without saying whether it was a rename, a rewrite, or who wrote it">
+      <span><span class="terminal-prompt">~/api-server $ </span>git diff --stat main</span>
+      <span> 41 files changed, 912 insertions(+), 887 deletions(-)</span>
+      <span><span class="terminal-prompt">~/api-server $ </span><span class="terminal-comment"># A rename? A rewrite? Written by whom?</span></span>
+      <span><span class="terminal-prompt">~/api-server $ </span><span class="terminal-comment"># git knows every line. It won’t say which ones matter.</span></span>
+    </div>
+    <div class="viewer-table-wrap">
+      <table>
+        <caption class="sr-only">Which kind of tool is built for common git tasks</caption>
+        <thead><tr><th scope="col">Task</th><th scope="col">Built for it</th></tr></thead>
+        <tbody>{tasks.map(([task, tool]) => <tr><td>{task}</td><td>{tool}</td></tr>)}</tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="method" class="home-container scoring-method" aria-labelledby="method-title">
+  <div class="scoring-method-inner">
+    <h2 id="method-title">How the scores work</h2>
+    <div>
+      <p>Every client gets a score from 0 to 5 on eight dimensions, each with published anchors that define what earns every point. A client’s total is the weighted average of those scores, scaled to 100. The default weights give 70 points to understanding change and 30 to daily git work.</p>
+      <p>Ten of the eleven score sets come from GitClear’s hands-on review, <a href="https://www.gitclear.com/best_git_diff_viewers_2026">Best Git Diff Viewers</a>, which lists every anchor. SourceGit was added for this page; its scores are provisional until it gets the same test.</p>
+      <p><strong>Disclosure:</strong> GitClient.com is run by GitClear, which makes Diff Digest. Its weakest scores, 1 of 5 for git operations and for maturity, count in every total, and when operations outweigh comprehension it falls behind GitKraken and Fork. The weights are yours to change.</p>
+    </div>
+  </div>
+</section>

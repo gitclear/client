@@ -1,0 +1,55 @@
+---
+import '../styles/global.css';
+import '../styles/home.css';
+import { currentYear } from '../lib/dates';
+
+const title = `GitClient.com: choose the best ${currentYear} git client`;
+const description = 'Compare eleven git clients for macOS and Windows with an open scoring rubric. Tune the weights to find your best fit, with downloads, prices, and detailed reviews.';
+---
+
+<!doctype html>
+<html lang="en" class="home-page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#F6F4EF" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href={new URL('/', Astro.site)} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="home-header">
+      <div class="home-container header-inner">
+        <a class="home-brand" href="/"><span>GitClient.com</span></a>
+        <nav aria-label="Primary">
+          <a href="#tune">Rankings</a><a href="#top">Top picks</a>
+          <a href="#client-vs-viewer">Client vs. diff viewer</a><a href="#install">Install git</a>
+        </nav>
+        <a class="home-button header-download" href="https://www.gitclear.com/download_diff_digest">Download Diff Digest</a>
+      </div>
+    </header>
+    <main id="main"><slot /></main>
+    <footer class="home-footer">
+      <div class="home-container footer-inner">
+        <div class="footer-about">
+          <p class="footer-brand">GitClient.com</p>
+          <p>Diff Digest is built by GitClear: ten years of commit-crunching research, packaged to run on your laptop.</p>
+        </div>
+        <nav aria-label="Footer">
+          <a href="https://www.gitclear.com/download_diff_digest">Download</a>
+          <a href="https://www.gitclear.com/best_git_diff_viewers_2026">Full rubric</a>
+          <a href="https://www.gitclear.com/best_ai_diff_viewer">AI diff viewer</a>
+          <a href="https://www.gitclear.com/security">Security</a><a href="https://www.gitclear.com/pricing">Pricing</a>
+        </nav>
+        <p class="footer-copyright">© {currentYear} GitClear</p>
+      </div>
+    </footer>
+  </body>
+</html>

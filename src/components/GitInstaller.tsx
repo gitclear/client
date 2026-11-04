@@ -2,13 +2,13 @@ import { useEffect, useRef, useState, type KeyboardEvent } from 'react';
 
 const platforms = {
   mac: { label: 'macOS', command: 'xcode-select --install', alternativeLabel: 'Prefer Homebrew?', alternative: 'brew install git', note: 'Installs Apple’s Command Line Tools, which include git.' },
-  linux: { label: 'Linux', command: 'sudo apt install git', alternativeLabel: 'Fedora / RHEL', alternative: 'sudo dnf install git', note: 'On Arch: sudo pacman -S git.' },
-  win: { label: 'Windows', command: 'winget install --id Git.Git -e', alternativeLabel: 'Using Scoop?', alternative: 'scoop install git', note: 'Includes Git Bash and Git Credential Manager.' },
+  linux: { label: 'Linux', command: 'sudo apt install git', alternativeLabel: 'On Fedora or RHEL?', alternative: 'sudo dnf install git', note: 'Uses your distribution’s package manager.' },
+  win: { label: 'Windows', command: 'winget install --id Git.Git -e', alternativeLabel: 'Prefer Scoop?', alternative: 'scoop install git', note: 'Installs Git for Windows, including Git Bash.' },
 };
 type Platform = keyof typeof platforms;
 const platformKeys = Object.keys(platforms) as Platform[];
 
-export default function GitInstaller() {
+export default function GitInstaller({ autoDetect = true, reviewHref = '/#tour' }: { autoDetect?: boolean; reviewHref?: string }) {
   const [platform, setPlatform] = useState<Platform>('mac');
   const [copyState, setCopyState] = useState<'idle' | 'copied' | 'error'>('idle');
   const tabs = useRef<Array<HTMLButtonElement | null>>([]);
@@ -17,10 +17,11 @@ export default function GitInstaller() {
   const current = platforms[platform];
 
   useEffect(() => {
+    if (!autoDetect) return;
     const agent = navigator.userAgent.toLowerCase();
     if (agent.includes('windows')) setPlatform('win');
     else if (agent.includes('linux') && !agent.includes('android')) setPlatform('linux');
-  }, []);
+  }, [autoDetect]);
 
   useEffect(() => {
     if (copyState === 'idle') return;
@@ -93,7 +94,7 @@ export default function GitInstaller() {
           <p className="installer-note">{current.note} Verify with <code>git --version</code></p>
         </div>
         <span className="copy-status" role="status" aria-live="polite">{copyState === 'copied' ? 'Install command copied.' : copyState === 'error' ? 'Could not copy automatically. Select and copy the command above.' : ''}</span>
-        <div className="installer-footer"><span aria-hidden="true">→</span><p>When your diffs outgrow it, <a href="/#tour">Diff Digest</a> reads the same local repos. Nothing to migrate.</p></div>
+        <div className="installer-footer"><span aria-hidden="true">→</span><p>When your diffs outgrow it, <a href={reviewHref}>Diff Digest</a> reads the same local repos. Nothing to migrate.</p></div>
       </div>
     </aside>
   );

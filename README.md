@@ -19,12 +19,17 @@ the site locally through Wrangler to verify Cloudflare routing and 404 behavior.
 
 ## Pages and components
 
-- `src/pages/index.astro`: Diff Digest landing page, adapted from the supplied `GitClient.com.html` design.
-- `src/components/landing/`: the ten landing-page sections, including SVG research charts and product previews.
+- `src/pages/index.astro`: the git-client comparison home page, implemented from the supplied `gitclient.com home-html/Main.dc.html` reference.
+- `src/components/home/`: the interactive rankings, three review tiers, client-versus-viewer comparison, and scoring disclosure.
+- `src/data/clients.ts`: all eleven client reviews, eight rubric dimensions, and five weight presets from the design.
+- `src/lib/rankings.ts`: normalized scores, stable ranking, platform availability, and movement from default ranks.
+- `src/lib/dates.ts`: the current year, resolved at build time and shared with hydrated components. Rebuilding refreshes the title, hero, and copyright; the diff label uses the previous year relative to it.
+- `src/layouts/HomeLayout.astro` and `src/styles/home.css`: the home page shell and responsive reference styling.
+- `src/components/landing/`: retained sections from the previous Diff Digest landing page.
 - `src/components/GitInstaller.tsx`: the React installer island, with OS detection, keyboard-accessible tabs, and clipboard feedback.
 - `src/data/`: activity-preview and comparison-table content rendered at build time.
 - `src/scripts/site.ts`: persisted light/dark theme and mobile navigation.
-- `public/fonts/`: Geist, Geist Mono, and Instrument Serif fonts extracted from the supplied design, served locally.
+- `public/fonts/`: locally served fonts, including the home page’s Instrument Sans, JetBrains Mono, and Newsreader.
 - `src/pages/about.astro` and `src/pages/updates.astro`: placeholder auxiliary pages.
 - `src/pages/404.astro`: custom not-found page.
 - `src/layouts/SiteLayout.astro`: shared navigation, metadata, and page shell.
@@ -33,9 +38,11 @@ the site locally through Wrangler to verify Cloudflare routing and 404 behavior.
 Add `.astro` or `.md` files under `src/pages/` for additional routes. Files in
 `public/` are copied directly into the build, useful for images and downloads.
 
-React components live in `src/components/`. The installer uses `client:load`;
-the rest of the landing page is static HTML with a small shared navigation/theme
-script. For another component that needs browser interaction, opt into hydration:
+React components live in `src/components/`. The home page’s `ClientRankings` uses
+`client:load` to keep the hero, score bars, and all three review tiers synchronized
+as presets, weights, or platform preferences change. It includes the standard Git
+installer with keyboard-accessible OS tabs and clipboard feedback. All review
+content is also rendered into static HTML. For another interactive component, opt into hydration:
 
 ```astro
 ---
@@ -48,11 +55,12 @@ import InteractiveWidget from '../components/InteractiveWidget';
 `client:load` loads it immediately. Omit the directive for static HTML. The page
 content and download links work without JavaScript. See [Astro's React integration](https://docs.astro.build/en/guides/integrations-guide/react/).
 
-The two product previews in `History.astro` and `DeepDive.astro` are labeled
-“Video coming soon”: no recordings were included in the design. Replace their
-preview frames with native video players when the media is available. Download
-and purchase links use the GitClear destinations from the design. The research
-charts, comparison entries, and pricing copy also follow the supplied design.
+The supplied home-page design contains labeled screenshot placeholders and
+initial-based client icons, with no image assets. The implementation preserves
+those placeholders, captions, and intended filenames. Replace them with actual
+captures when available. Reviews, pricing, platform availability, and vendor
+download destinations follow the reference; SourceGit’s scores remain labeled
+provisional. Home-page styles are isolated from the auxiliary routes.
 
 ## Deploy to Cloudflare
 

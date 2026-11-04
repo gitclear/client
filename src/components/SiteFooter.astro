@@ -1,3 +1,7 @@
+---
+import { currentYear } from '../lib/dates';
+---
+
 <footer class="site-footer" style="flex-shrink: 0; box-sizing: border-box; padding: 40px 120px 48px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; align-items: flex-end; gap: 48px">
   <div style="display: flex; flex-direction: column; gap: 10px">
     <div style="font-size: 20px; font-weight: 600; letter-spacing: -0.02em">GitClient<span style="color: var(--muted)">.com</span></div>
@@ -10,5 +14,5 @@
     <a href="https://www.gitclear.com/security" style="color: var(--body)">Security</a>
     <a href="https://www.gitclear.com/pricing" style="color: var(--body)">Pricing</a>
   </nav>
-  <div style="font-size: 13px; color: var(--muted)">© 2026 GitClear</div>
+  <div style="font-size: 13px; color: var(--muted)">© {currentYear} GitClear</div>
 </footer>

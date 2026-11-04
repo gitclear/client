@@ -1,7 +1,9 @@
 import { dimensions, type Client, type Screenshot } from '../../data/clients';
 import type { RankedReview } from '../../lib/rankings';
+import screenshotManifest from '../../data/screenshot-assets.json';
 
 const platformNames = { mac: 'macOS', win: 'Windows', linux: 'Linux' };
+const screenshotAssets: Record<string, { width: number; height: number; alt: string }> = screenshotManifest;
 
 export function RankChange({ review, platformName }: { review: RankedReview; platformName: string }) {
   if (!review.available) return <span className="rank-unavailable">Not on {platformName} yet</span>;
@@ -16,7 +18,17 @@ function PlatformChips({ client }: { client: Client }) {
   </div>;
 }
 
-function ScreenshotPlaceholder({ shot, compact = false }: { shot: Screenshot; compact?: boolean }) {
+function ClientScreenshot({ shot, compact = false }: { shot: Screenshot; compact?: boolean }) {
+  const asset = screenshotAssets[shot.file];
+  if (asset) {
+    const image = <img src={`/images/clients/${shot.file}`} alt={asset.alt}
+      width={asset.width} height={asset.height} loading="lazy" decoding="async" />;
+    const link = <a className={`${compact ? 'screenshot-thumb' : 'screenshot-frame'} screenshot-link`}
+      href={`/images/clients/${shot.file}`} target="_blank" rel="noopener" aria-label={`Open full-size screenshot: ${shot.what}`}>
+      {image}
+    </a>;
+    return compact ? link : <figure className="client-screenshot">{link}<figcaption>{shot.caption}</figcaption></figure>;
+  }
   if (compact) return <div className="screenshot-thumb">Screenshot: {shot.what}</div>;
   return <figure className="client-screenshot">
     <div className="screenshot-frame">
@@ -57,7 +69,7 @@ export function FullReview({ review, platformName }: Props) {
       <div className="client-score"><p>{score}<span> / 100</span></p><RankChange review={review} platformName={platformName} /></div>
     </div>
     <div className="client-screenshots">
-      {client.shots.map((shot) => <ScreenshotPlaceholder key={shot.what} shot={shot} />)}
+      {client.shots.map((shot) => <ClientScreenshot key={shot.what} shot={shot} />)}
     </div>
     <div className="full-review-details">
       <div className="client-description">
@@ -86,7 +98,7 @@ export function FullReview({ review, platformName }: Props) {
 export function MediumReview({ review, platformName }: Props) {
   const { client, rank, score } = review;
   return <article id={`c-${client.id}`} className="client-review medium-review" aria-labelledby={`t-${client.id}`}>
-    <ScreenshotPlaceholder shot={client.shots[0]} />
+    <ClientScreenshot shot={client.shots[0]} />
     <div className="medium-review-details">
       <div className="medium-review-heading">
         <span className="rank-label">#{rank}</span><h3 id={`t-${client.id}`}>{client.name}</h3>
@@ -102,7 +114,7 @@ export function CompactReview({ review, platformName, open, onToggle }: Props & 
   const { client, rank, score } = review;
   return <article id={`c-${client.id}`} className="client-review compact-review" aria-labelledby={`t-${client.id}`}>
     <div className="compact-review-heading">
-      <ScreenshotPlaceholder shot={client.shots[0]} compact />
+      <ClientScreenshot shot={client.shots[0]} compact />
       <div><p className="rank-label">#{rank}, {score} / 100</p><h3 id={`t-${client.id}`}>{client.name}</h3><RankChange review={review} platformName={platformName} /></div>
     </div>
     <button className="home-button button-line details-toggle" type="button" aria-expanded={open} aria-controls={`details-${client.id}`} onClick={onToggle}>

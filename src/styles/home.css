@@ -147,6 +147,9 @@
 .home-page .client-screenshot { margin: 0; flex: 1 1 220px; min-width: 0; }
 .home-page .client-screenshots .client-screenshot:first-child { flex: 2 1 440px; }
 .home-page .screenshot-frame { box-sizing: content-box; aspect-ratio: 16 / 10; border: 1px solid #dcd6ca; border-radius: 12px; background: #efebe2; display: flex; flex-direction: column; overflow: hidden; }
+.home-page .screenshot-link { padding: 0; overflow: hidden; text-decoration: none; }
+.home-page .screenshot-link:hover { border-color: var(--accent); }
+.home-page .screenshot-link img { display: block; width: 100%; height: 100%; min-height: 0; object-fit: contain; }
 .home-page .screenshot-titlebar { display: flex; gap: 6px; padding: 9px 12px; border-bottom: 1px solid var(--line); background: #f3f0e9; }
 .home-page .screenshot-titlebar > span { box-sizing: content-box; width: 8px; height: 8px; border-radius: 50%; background: #d6d0c3; }
 .home-page .screenshot-label { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; padding: 12px; text-align: center; color: #57534b; font-size: 13.5px; }
@@ -201,6 +204,7 @@
 .home-page .compact-review-heading { display: flex; gap: 14px; align-items: center; }
 .home-page .compact-review-heading > div:last-child { min-width: 0; flex: 1; }
 .home-page .screenshot-thumb { flex: none; width: 120px; aspect-ratio: 16 / 10; border-radius: 8px; border: 1px solid #dcd6ca; background: #efebe2; display: flex; align-items: center; justify-content: center; padding: 6px; text-align: center; font-size: 11.5px; line-height: 1.3; color: #57534b; }
+.home-page .screenshot-thumb.screenshot-link { padding: 0; }
 .home-page .compact-review .rank-label { font-size: 12.5px; }
 .home-page .compact-review h3 { margin: 2px 0 0; font-size: 26px; font-weight: 400; line-height: 1.15; }
 .home-page .compact-review .rank-change { font: 12px var(--home-mono); }

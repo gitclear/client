@@ -1,0 +1,107 @@
+{
+  "git-fork-base-ui.jpg": {
+    "width": 1440,
+    "height": 906,
+    "alt": "Fork's Repository Manager and summary view listing recent repositories in groups"
+  },
+  "git-fork-diff-view.jpg": {
+    "width": 1440,
+    "height": 906,
+    "alt": "Fork showing a side-by-side file diff with character-level highlights and a commit action bar"
+  },
+  "git-fork-history.jpg": {
+    "width": 1200,
+    "height": 755,
+    "alt": "Fork's main window showing a commit graph, commit list, and changeset panel for a single repository"
+  },
+  "git-tower-branch.jpg": {
+    "width": 1200,
+    "height": 720,
+    "alt": "Tower's History view with a commit graph, branch sidebar, and selected-commit details"
+  },
+  "git-tower-repo-history.jpg": {
+    "width": 1440,
+    "height": 864,
+    "alt": "Tower Working Copy showing staged Ruby files and a unified diff with unstage-chunk controls"
+  },
+  "git-tower-small-diff.jpg": {
+    "width": 618,
+    "height": 768,
+    "alt": "Tower diff pane showing a small staged change with insertions and deletions highlighted"
+  },
+  "gitkraken-full-screen-diff.jpg": {
+    "width": 1100,
+    "height": 557,
+    "alt": "GitKraken full-screen file diff with highlighted changes and a file sidebar."
+  },
+  "gitkraken-history.webp": {
+    "width": 1560,
+    "height": 831,
+    "alt": "GitKraken file diff pane with word-level highlights in a stylesheet."
+  },
+  "gitkraken-sample-interface.png": {
+    "width": 1155,
+    "height": 532,
+    "alt": "Annotated diagram of GitKraken's default layout: repo sidebar, commit graph, and commit panel"
+  },
+  "lazy-git-repo-history.jpg": {
+    "width": 768,
+    "height": 419,
+    "alt": "Lazygit's recent repositories popup listing local repos with branch names and filesystem paths"
+  },
+  "lazygit-diff.jpg": {
+    "width": 767,
+    "height": 498,
+    "alt": "Lazygit showing an untracked file's diff beside files, branches, and recent commits"
+  },
+  "lazygit-home.jpg": {
+    "width": 836,
+    "height": 606,
+    "alt": "Lazygit's terminal UI with status, files, branches, commits, and a staged versus unstaged diff"
+  },
+  "smartgit-diff.jpg": {
+    "width": 1200,
+    "height": 842,
+    "alt": "SmartGit working tree and index comparison with a side-by-side file diff."
+  },
+  "smartgit-repo-history.jpg": {
+    "width": 1000,
+    "height": 727,
+    "alt": "SmartGit Log window with repository list, commit graph, commit message, and a side-by-side diff"
+  },
+  "sourcetree-file-status.jpg": {
+    "width": 1024,
+    "height": 682,
+    "alt": "Sourcetree file status with staged and unstaged files beside a unified CSS diff and a commit message field"
+  },
+  "sourcetree-repo-view.jpg": {
+    "width": 999,
+    "height": 759,
+    "alt": "Sourcetree History with a colored commit graph, branch list, and staged-file pane"
+  },
+  "sublime-diff-view.jpg": {
+    "width": 759,
+    "height": 537,
+    "alt": "Sublime Merge unified diff of a syntax-definition file with hunk history and line-level highlights"
+  },
+  "sublime-homepage.jpg": {
+    "width": 1263,
+    "height": 810,
+    "alt": "Sublime Merge marketing screenshot of the dark-theme client with hunk staging on a README diff"
+  },
+  "sublime-repo-view.jpg": {
+    "width": 849,
+    "height": 515,
+    "alt": "Sublime Merge's default three-column layout with locations, commit list, and a file diff"
+  },
+  "diff-digest-ai-attribution.webp": {
+    "width": 1675,
+    "height": 951,
+    "alt": "Diff Digest diff view with a popover naming the generating model for one added line and a Diff Delta review-progress dial"
+  },
+  "diff-digest-hero.webp": {
+    "width": 1473,
+    "height": 823,
+    "alt": "Diff Digest's cross-repo activity feed showing commits from many repositories as impact-sized bubbles across five days"
+  }
+}

@@ -224,9 +224,9 @@ export const clients: Client[] = [
     "cta": "Download GitKraken",
     "shots": [
       {
-        "what": "Commit Graph",
-        "file": "gitkraken-history.webp",
-        "caption": "The Commit Graph: one repository, colored branch lanes, a detail panel on the right."
+        "what": "annotated window layout",
+        "file": "gitkraken-sample-interface.png",
+        "caption": "Annotated overview of the repository sidebar, commit graph, and commit panel. Workspaces sit on a separate tab."
       },
       {
         "what": "full-screen diff",
@@ -234,9 +234,9 @@ export const clients: Client[] = [
         "caption": "Full-screen diff with word-level highlighting."
       },
       {
-        "what": "default window layout",
-        "file": "gitkraken-sample-interface.png",
-        "caption": "Repo sidebar, graph and commit panel. Workspaces sit on a separate tab."
+        "what": "file diff pane",
+        "file": "gitkraken-history.webp",
+        "caption": "A cropped file diff with word-level highlights."
       }
     ]
   },

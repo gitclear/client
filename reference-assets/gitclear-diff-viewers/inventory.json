@@ -1,0 +1,571 @@
+{
+  "sourcePage": "https://www.gitclear.com/best_git_diff_viewers_2026",
+  "retrievedAt": "2026-11-04T15:06:51.667Z",
+  "summary": {
+    "screenshotsRetrieved": 21,
+    "appsWithScreenshots": 8,
+    "screenshotsNeeded": 3,
+    "appIconsNeeded": 11,
+    "supportingImagesRetrieved": 6,
+    "inlineSvgRetrieved": 1,
+    "unavailableSupportingImages": 1,
+    "recommendedReplacementCaptures": 1
+  },
+  "assets": [
+    {
+      "sourceUrl": "http://images.gitclear.com/uploads/remote_images/1528239594-377033-0001-6953.png",
+      "file": "reference-assets/gitclear-diff-viewers/1528239594-377033-0001-6953.png",
+      "kind": "supporting",
+      "alt": "",
+      "status": "unavailable",
+      "reason": "Original host does not resolve. The corresponding object on the S3 host declared by the article returns HTTP 403.",
+      "fallbackUrl": "https://s3.us-west-1.amazonaws.com/images.gitclear.com/uploads/remote_images/1528239594-377033-0001-6953.png"
+    },
+    {
+      "sourceUrl": "https://asset.gitclear.com/assets/content/bill-author-e9bed27481e0e09e920347c08194d2f3377ef78fa9b3c124e7d1b1109ac860c2.jpg",
+      "file": "reference-assets/gitclear-diff-viewers/bill-author.jpg",
+      "kind": "supporting",
+      "alt": "",
+      "status": "retrieved",
+      "bytes": 4785
+    },
+    {
+      "sourceUrl": "https://asset.gitclear.com/assets/logos/gitclear_logo_400-81d94dd935cff455d14e7307aa86ef4ed73d1ba0ad9d7b131f0586e1997c5150.png",
+      "file": "reference-assets/gitclear-diff-viewers/gitclear_logo_400.png",
+      "kind": "supporting",
+      "alt": "GitClear Footer Logo",
+      "status": "retrieved",
+      "bytes": 5457
+    },
+    {
+      "sourceUrl": "https://asset.gitclear.com/assets/pages/best-diff-viewers/competitors/git-fork-base-ui-8dab5666dd6f0ec6265ab48d64fc0c1e214152ef9685334f1ac31500114d308a.jpg",
+      "file": "public/images/clients/git-fork-base-ui.jpg",
+      "kind": "screenshot",
+      "alt": "Fork's Repository Manager and summary view listing recent repositories in groups",
+      "width": 1440,
+      "height": 906,
+      "status": "retrieved",
+      "bytes": 85995
+    },
+    {
+      "sourceUrl": "https://asset.gitclear.com/assets/pages/best-diff-viewers/competitors/git-fork-diff-view-db2ed8cf69fe2666fc469876cf98002bcf8b880ddc392d2686238381b2b82787.jpg",
+      "file": "public/images/clients/git-fork-diff-view.jpg",
+      "kind": "screenshot",
+      "alt": "Fork showing a side-by-side file diff with character-level highlights and a commit action bar",
+      "width": 1440,
+      "height": 906,
+      "status": "retrieved",
+      "bytes": 98214
+    },
+    {
+      "sourceUrl": "https://asset.gitclear.com/assets/pages/best-diff-viewers/competitors/git-fork-history-28ccdae8272f373b2a9a7c1775d3793949122bf4447eff1b9248fa4720a3b6d8.jpg",
+      "file": "public/images/clients/git-fork-history.jpg",
+      "kind": "screenshot",
+      "alt": "Fork's main window showing a commit graph, commit list, and changeset panel for a single repository",
+      "width": 1200,
+      "height": 755,
+      "status": "retrieved",
+      "bytes": 88108
+    },
+    {
+      "sourceUrl": "https://asset.gitclear.com/assets/pages/best-diff-viewers/competitors/git-tower-branch-bdccc8e555d6ceb73890ecc05a1ba32458057f00b4bd240ab2072ab1c01d13e0.jpg",
+      "file": "public/images/clients/git-tower-branch.jpg",
+      "kind": "screenshot",
+      "alt": "Tower's History view with a commit graph, branch sidebar, and selected-commit details",
+      "width": 1200,
+      "height": 720,
+      "status": "retrieved",
+      "bytes": 94121
+    },
+    {
+      "sourceUrl": "https://asset.gitclear.com/assets/pages/best-diff-viewers/competitors/git-tower-repo-history-baf85100058f35f32be5d451350a9e8dada049389940a68d01e6c0037655c5af.jpg",
+      "file": "public/images/clients/git-tower-repo-history.jpg",
+      "kind": "screenshot",
+      "alt": "Tower Working Copy showing staged Ruby files and a unified diff with unstage-chunk controls",
+      "width": 1440,
+      "height": 864,
+      "status": "retrieved",
+      "bytes": 101295
+    },
+    {
+      "sourceUrl": "https://asset.gitclear.com/assets/pages/best-diff-viewers/competitors/git-tower-small-diff-8dce078fe33b0f85953be63bab5498d9825dd8f3519d33fcc19813ad81335936.jpg",
+      "file": "public/images/clients/git-tower-small-diff.jpg",
+      "kind": "screenshot",
+      "alt": "Tower diff pane showing a small staged change with insertions and deletions highlighted",
+      "width": 618,
+      "height": 768,
+      "status": "retrieved",
+      "bytes": 80991
+    },
+    {
+      "sourceUrl": "https://asset.gitclear.com/assets/pages/best-diff-viewers/competitors/gitkraken-full-screen-diff-43069f9438849b7a3a95c43be578146c5b5b0f1079c4cc3953d7675669d2a3ee.jpg",
+      "file": "public/images/clients/gitkraken-full-screen-diff.jpg",
+      "kind": "screenshot",
+      "alt": "GitKraken full-screen diff of a markdown file with word-level highlights and a file list sidebar",
+      "width": 1100,
+      "height": 557,
+      "status": "retrieved",
+      "bytes": 90795
+    },
+    {
+      "sourceUrl": "https://asset.gitclear.com/assets/pages/best-diff-viewers/competitors/gitkraken-history-3f535b1ec5159587f196cd4ec5eae6c677e33e7d8ebd7fc054ab93f11bada7c5.webp",
+      "file": "public/images/clients/gitkraken-history.webp",
+      "kind": "screenshot",
+      "alt": "GitKraken's default commit graph with a left sidebar, colored branch lines, and a commit detail panel",
+      "width": 1560,
+      "height": 831,
+      "status": "retrieved",
+      "bytes": 97442
+    },
+    {
+      "sourceUrl": "https://asset.gitclear.com/assets/pages/best-diff-viewers/competitors/gitkraken-sample-interface-6be98b66b1f88f88cb09ae8110b989029a4937690ada87913bcd94a3148b7c5e.png",
+      "file": "public/images/clients/gitkraken-sample-interface.png",
+      "kind": "screenshot",
+      "alt": "Annotated diagram of GitKraken's default layout: repo sidebar, commit graph, and commit panel",
+      "width": 1155,
+      "height": 532,
+      "status": "retrieved",
+      "bytes": 30261
+    },
+    {
+      "sourceUrl": "https://asset.gitclear.com/assets/pages/best-diff-viewers/competitors/lazy-git-repo-history-0e18a078797dd50cdc07d2f267dbe0871e8116d239e956796c3b1d98d5a19252.jpg",
+      "file": "public/images/clients/lazy-git-repo-history.jpg",
+      "kind": "screenshot",
+      "alt": "Lazygit's recent repositories popup listing local repos with branch names and filesystem paths",
+      "width": 768,
+      "height": 419,
+      "status": "retrieved",
+      "bytes": 74483
+    },
+    {
+      "sourceUrl": "https://asset.gitclear.com/assets/pages/best-diff-viewers/competitors/lazygit-diff-82869cfdebcd70097330f7fd881da2b7bf152df0a5136b4a87818cae90de9131.jpg",
+      "file": "public/images/clients/lazygit-diff.jpg",
+      "kind": "screenshot",
+      "alt": "Lazygit showing an untracked file's diff beside files, branches, and recent commits",
+      "width": 767,
+      "height": 498,
+      "status": "retrieved",
+      "bytes": 75256
+    },
+    {
+      "sourceUrl": "https://asset.gitclear.com/assets/pages/best-diff-viewers/competitors/lazygit-home-67bf6e8a0dc35d6069f4125dc58a6650a09ae892ad1ac77a838d4d459fb6ec80.jpg",
+      "file": "public/images/clients/lazygit-home.jpg",
+      "kind": "screenshot",
+      "alt": "Lazygit's terminal UI with status, files, branches, commits, and a staged versus unstaged diff",
+      "width": 836,
+      "height": 606,
+      "status": "retrieved",
+      "bytes": 67636
+    },
+    {
+      "sourceUrl": "https://asset.gitclear.com/assets/pages/best-diff-viewers/competitors/smartgit-diff-7dae919f548850fdd484a175d282aa03f4cb77aa62a3b3851c5c59417f25ef24.jpg",
+      "file": "public/images/clients/smartgit-diff.jpg",
+      "kind": "screenshot",
+      "alt": "SmartGit side-by-side diff of a CSS file with unified, side-by-side, and compact view toggles",
+      "width": 1200,
+      "height": 842,
+      "status": "retrieved",
+      "bytes": 90139
+    },
+    {
+      "sourceUrl": "https://asset.gitclear.com/assets/pages/best-diff-viewers/competitors/smartgit-repo-history-1124e3f643f682b7e73f294bb81e795ff9615749808cd6624d1a5ca1dabe61d7.jpg",
+      "file": "public/images/clients/smartgit-repo-history.jpg",
+      "kind": "screenshot",
+      "alt": "SmartGit Log window with repository list, commit graph, commit message, and a side-by-side diff",
+      "width": 1000,
+      "height": 727,
+      "status": "retrieved",
+      "bytes": 94580
+    },
+    {
+      "sourceUrl": "https://asset.gitclear.com/assets/pages/best-diff-viewers/competitors/sourcetree-file-status-69787e2f3d75039145fd7cc10e86f9699faa6e1d53649e24a7023d53ba94fdbc.jpg",
+      "file": "public/images/clients/sourcetree-file-status.jpg",
+      "kind": "screenshot",
+      "alt": "Sourcetree file status with staged and unstaged files beside a unified CSS diff and a commit message field",
+      "width": 1024,
+      "height": 682,
+      "status": "retrieved",
+      "bytes": 144619
+    },
+    {
+      "sourceUrl": "https://asset.gitclear.com/assets/pages/best-diff-viewers/competitors/sourcetree-repo-view-732e8034ad9fa1a675011d5862650afdf70c7143fba640bc998978aa38914ee4.jpg",
+      "file": "public/images/clients/sourcetree-repo-view.jpg",
+      "kind": "screenshot",
+      "alt": "Sourcetree History with a colored commit graph, branch list, and staged-file pane",
+      "width": 999,
+      "height": 759,
+      "status": "retrieved",
+      "bytes": 74583
+    },
+    {
+      "sourceUrl": "https://asset.gitclear.com/assets/pages/best-diff-viewers/competitors/sublime-diff-view-bf41a791ce9e484324217a96af9d13cd125d30a638f623f0fc7ec5e8257d0af7.jpg",
+      "file": "public/images/clients/sublime-diff-view.jpg",
+      "kind": "screenshot",
+      "alt": "Sublime Merge unified diff of a syntax-definition file with hunk history and line-level highlights",
+      "width": 759,
+      "height": 537,
+      "status": "retrieved",
+      "bytes": 46998
+    },
+    {
+      "sourceUrl": "https://asset.gitclear.com/assets/pages/best-diff-viewers/competitors/sublime-homepage-3263b69b5b5264d93431f7595e827dc5db541d587cdd753a7b0d0c3471064fee.jpg",
+      "file": "public/images/clients/sublime-homepage.jpg",
+      "kind": "screenshot",
+      "alt": "Sublime Merge marketing screenshot of the dark-theme client with hunk staging on a README diff",
+      "width": 1263,
+      "height": 810,
+      "status": "retrieved",
+      "bytes": 98297
+    },
+    {
+      "sourceUrl": "https://asset.gitclear.com/assets/pages/best-diff-viewers/competitors/sublime-repo-view-99a7a9d16cef2f4290f583032d613a3a28afe8be79f58be38284d7d24d28facb.jpg",
+      "file": "public/images/clients/sublime-repo-view.jpg",
+      "kind": "screenshot",
+      "alt": "Sublime Merge's default three-column layout with locations, commit list, and a file diff",
+      "width": 849,
+      "height": 515,
+      "status": "retrieved",
+      "bytes": 99300
+    },
+    {
+      "sourceUrl": "https://asset.gitclear.com/assets/pages/best-diff-viewers/diff-digest-ai-attribution-40b7e8f1981a198501cd23a8c9b78bc8f6db6a5ce7273002338ca875ecda641b.webp",
+      "file": "public/images/clients/diff-digest-ai-attribution.webp",
+      "kind": "screenshot",
+      "alt": "Diff Digest diff view with a popover naming the generating model for one added line and a Diff Delta review-progress dial",
+      "width": 1675,
+      "height": 951,
+      "status": "retrieved",
+      "bytes": 94278
+    },
+    {
+      "sourceUrl": "https://asset.gitclear.com/assets/pages/best-diff-viewers/diff-digest-hero-63b66d6304483e46ac4062b9b3e57715761e344022dffd3b857dcbbc008cc257.webp",
+      "file": "public/images/clients/diff-digest-hero.webp",
+      "kind": "screenshot",
+      "alt": "Diff Digest's cross-repo activity feed showing commits from many repositories as impact-sized bubbles across five days",
+      "width": 1473,
+      "height": 823,
+      "status": "retrieved",
+      "bytes": 74702
+    },
+    {
+      "sourceUrl": "https://asset.gitclear.com/assets/pages/best-diff-viewers/og-card-656fd74a2ee029bb852f0d9e7c3637c7c2b1f165c9353cb6880d42e4f8165598.png",
+      "file": "reference-assets/gitclear-diff-viewers/og-card.png",
+      "kind": "supporting",
+      "alt": "",
+      "status": "retrieved",
+      "bytes": 83425
+    },
+    {
+      "sourceUrl": "https://asset.gitclear.com/assets/security/footer-iso-27001-8f2c022fab6e7813ceaf9a350c0e9c664aa1cf045907c030c2c68e317303b90b.png",
+      "file": "reference-assets/gitclear-diff-viewers/footer-iso-27001.png",
+      "kind": "supporting",
+      "alt": "Certified ISO-27001 vendor",
+      "status": "retrieved",
+      "bytes": 4811
+    },
+    {
+      "sourceUrl": "https://asset.gitclear.com/assets/security/footer-pentest-481889b3fa7aae49548c355ef5242cee09bc949e451e2de8cc149ea0f8009d23.png",
+      "file": "reference-assets/gitclear-diff-viewers/footer-pentest.png",
+      "kind": "supporting",
+      "alt": "Security penetration test completed 2026",
+      "status": "retrieved",
+      "bytes": 4920
+    },
+    {
+      "sourceUrl": "https://asset.gitclear.com/assets/security/footer-soc2-fe44c1eed30a83032a5b2d7a2e1a56834ff4ebfd473d95435be19874708f82de.png",
+      "file": "reference-assets/gitclear-diff-viewers/footer-soc2.png",
+      "kind": "supporting",
+      "alt": "Accredited ISO-27001 vendor",
+      "status": "retrieved",
+      "bytes": 5686
+    },
+    {
+      "sourceUrl": "https://www.gitclear.com/best_git_diff_viewers_2026#inline-header-logo",
+      "file": "reference-assets/gitclear-diff-viewers/gitclear-header-logo.svg",
+      "kind": "inline-svg",
+      "alt": "GitClear header logo",
+      "status": "retrieved",
+      "bytes": 9285
+    }
+  ],
+  "clientCoverage": [
+    {
+      "app": "Diff Digest",
+      "screenshots": [
+        {
+          "view": "cross-repo activity feed",
+          "file": "diff-digest-hero.webp",
+          "status": "retrieved",
+          "localPath": "public/images/clients/diff-digest-hero.webp"
+        },
+        {
+          "view": "per-line AI attribution",
+          "file": "diff-digest-ai-attribution.webp",
+          "status": "retrieved",
+          "localPath": "public/images/clients/diff-digest-ai-attribution.webp"
+        }
+      ],
+      "icon": {
+        "status": "needed",
+        "suggestedFile": "diff-digest.svg"
+      }
+    },
+    {
+      "app": "GitKraken",
+      "screenshots": [
+        {
+          "view": "annotated window layout",
+          "file": "gitkraken-sample-interface.png",
+          "status": "retrieved",
+          "localPath": "public/images/clients/gitkraken-sample-interface.png",
+          "note": "Temporary lead image; a clean, unannotated Commit Graph screenshot is recommended."
+        },
+        {
+          "view": "full-screen diff",
+          "file": "gitkraken-full-screen-diff.jpg",
+          "status": "retrieved",
+          "localPath": "public/images/clients/gitkraken-full-screen-diff.jpg"
+        },
+        {
+          "view": "file diff pane",
+          "file": "gitkraken-history.webp",
+          "status": "retrieved",
+          "localPath": "public/images/clients/gitkraken-history.webp",
+          "note": "Visual inspection shows a cropped diff pane, despite the filename and source-page alt text claiming a commit graph."
+        }
+      ],
+      "icon": {
+        "status": "needed",
+        "suggestedFile": "gitkraken.svg"
+      }
+    },
+    {
+      "app": "Fork",
+      "screenshots": [
+        {
+          "view": "commit graph and changeset",
+          "file": "git-fork-history.jpg",
+          "status": "retrieved",
+          "localPath": "public/images/clients/git-fork-history.jpg"
+        },
+        {
+          "view": "side-by-side diff",
+          "file": "git-fork-diff-view.jpg",
+          "status": "retrieved",
+          "localPath": "public/images/clients/git-fork-diff-view.jpg"
+        },
+        {
+          "view": "Repository Manager",
+          "file": "git-fork-base-ui.jpg",
+          "status": "retrieved",
+          "localPath": "public/images/clients/git-fork-base-ui.jpg"
+        }
+      ],
+      "icon": {
+        "status": "needed",
+        "suggestedFile": "fork.svg"
+      }
+    },
+    {
+      "app": "Tower",
+      "screenshots": [
+        {
+          "view": "History view",
+          "file": "git-tower-branch.jpg",
+          "status": "retrieved",
+          "localPath": "public/images/clients/git-tower-branch.jpg"
+        },
+        {
+          "view": "Working Copy staging",
+          "file": "git-tower-repo-history.jpg",
+          "status": "retrieved",
+          "localPath": "public/images/clients/git-tower-repo-history.jpg"
+        },
+        {
+          "view": "diff pane",
+          "file": "git-tower-small-diff.jpg",
+          "status": "retrieved",
+          "localPath": "public/images/clients/git-tower-small-diff.jpg"
+        }
+      ],
+      "icon": {
+        "status": "needed",
+        "suggestedFile": "tower.svg"
+      }
+    },
+    {
+      "app": "SmartGit",
+      "screenshots": [
+        {
+          "view": "Log window",
+          "file": "smartgit-repo-history.jpg",
+          "status": "retrieved",
+          "localPath": "public/images/clients/smartgit-repo-history.jpg"
+        },
+        {
+          "view": "index vs. working tree",
+          "file": "smartgit-diff.jpg",
+          "status": "retrieved",
+          "localPath": "public/images/clients/smartgit-diff.jpg"
+        }
+      ],
+      "icon": {
+        "status": "needed",
+        "suggestedFile": "smartgit.svg"
+      }
+    },
+    {
+      "app": "Sublime Merge",
+      "screenshots": [
+        {
+          "view": "three-column layout",
+          "file": "sublime-repo-view.jpg",
+          "status": "retrieved",
+          "localPath": "public/images/clients/sublime-repo-view.jpg"
+        },
+        {
+          "view": "hunk history",
+          "file": "sublime-diff-view.jpg",
+          "status": "retrieved",
+          "localPath": "public/images/clients/sublime-diff-view.jpg"
+        },
+        {
+          "view": "hunk staging",
+          "file": "sublime-homepage.jpg",
+          "status": "retrieved",
+          "localPath": "public/images/clients/sublime-homepage.jpg"
+        }
+      ],
+      "icon": {
+        "status": "needed",
+        "suggestedFile": "sublime-merge.svg"
+      }
+    },
+    {
+      "app": "Lazygit",
+      "screenshots": [
+        {
+          "view": "five-panel terminal UI",
+          "file": "lazygit-home.jpg",
+          "status": "retrieved",
+          "localPath": "public/images/clients/lazygit-home.jpg"
+        },
+        {
+          "view": "staged vs. unstaged diff",
+          "file": "lazygit-diff.jpg",
+          "status": "retrieved",
+          "localPath": "public/images/clients/lazygit-diff.jpg"
+        },
+        {
+          "view": "recent repos switcher",
+          "file": "lazy-git-repo-history.jpg",
+          "status": "retrieved",
+          "localPath": "public/images/clients/lazy-git-repo-history.jpg"
+        }
+      ],
+      "icon": {
+        "status": "needed",
+        "suggestedFile": "lazygit.svg"
+      }
+    },
+    {
+      "app": "Sourcetree",
+      "screenshots": [
+        {
+          "view": "History graph",
+          "file": "sourcetree-repo-view.jpg",
+          "status": "retrieved",
+          "localPath": "public/images/clients/sourcetree-repo-view.jpg"
+        },
+        {
+          "view": "file status",
+          "file": "sourcetree-file-status.jpg",
+          "status": "retrieved",
+          "localPath": "public/images/clients/sourcetree-file-status.jpg"
+        }
+      ],
+      "icon": {
+        "status": "needed",
+        "suggestedFile": "sourcetree.svg"
+      }
+    },
+    {
+      "app": "SourceGit",
+      "screenshots": [
+        {
+          "view": "commit graph",
+          "file": "New capture needed",
+          "status": "capture-needed",
+          "suggestedFile": "sourcegit-commit-graph.webp"
+        }
+      ],
+      "icon": {
+        "status": "needed",
+        "suggestedFile": "sourcegit.svg"
+      }
+    },
+    {
+      "app": "GitHub Desktop",
+      "screenshots": [
+        {
+          "view": "History list",
+          "file": "New capture needed",
+          "status": "capture-needed",
+          "suggestedFile": "github-desktop-history-list.webp"
+        }
+      ],
+      "icon": {
+        "status": "needed",
+        "suggestedFile": "github-desktop.svg"
+      }
+    },
+    {
+      "app": "GitButler",
+      "screenshots": [
+        {
+          "view": "virtual branch lanes",
+          "file": "New capture needed",
+          "status": "capture-needed",
+          "suggestedFile": "gitbutler-virtual-branch-lanes.webp"
+        }
+      ],
+      "icon": {
+        "status": "needed",
+        "suggestedFile": "gitbutler.svg"
+      }
+    }
+  ],
+  "captureGuidance": {
+    "required": [
+      {
+        "app": "SourceGit",
+        "view": "Commit graph in the built-in light theme, with branch sidebar and a selected commit’s changes."
+      },
+      {
+        "app": "GitHub Desktop",
+        "view": "History tab with commit list and a selected file’s diff."
+      },
+      {
+        "app": "GitButler",
+        "view": "Parallel virtual-branch lanes with uncommitted changes visible."
+      }
+    ],
+    "consistency": "Use the same sample repository, branches, and commit window for the three new captures. Capture the full app window at 1440px wide or greater when possible; keep code and labels legible.",
+    "iconRequirements": "Official app icons for all eleven clients, ideally SVG or transparent PNG at least 96×96. The article supplies GitClear branding but no individual app icons.",
+    "optionalExtraViews": "Additional diff, staging, or repository-management views for the three missing apps may enrich their top-three review layout; the current page requires only one screenshot each.",
+    "recommendedReplacements": [
+      {
+        "app": "GitKraken",
+        "view": "A clean, unannotated Commit Graph capture, showing the complete app window with branch sidebar, graph, and selected commit details.",
+        "currentSubstitute": "gitkraken-sample-interface.png",
+        "reason": "The source’s gitkraken-history.webp is a cropped diff pane. The available sample-interface PNG is an annotated diagram."
+      }
+    ]
+  },
+  "visualInspectionNotes": [
+    "All 21 screenshots were decoded and visually inspected. Source filenames and descriptions are not always accurate.",
+    "GitKraken’s file named gitkraken-history.webp is a cropped file diff, not a commit graph. The page uses its annotated layout as the lead image and labels the diff crop accurately.",
+    "SmartGit’s file named smartgit-diff.jpg shows a working-tree/index file comparison; the source’s description of a CSS diff is inaccurate. Local alt text avoids the incorrect file-type claim.",
+    "Screenshots vary in theme, age, repository, size, and cropping; a consistent new capture set would improve visual consistency but is not required to fill the remaining slots."
+  ]
+}

@@ -55,12 +55,18 @@ import InteractiveWidget from '../components/InteractiveWidget';
 `client:load` loads it immediately. Omit the directive for static HTML. The page
 content and download links work without JavaScript. See [Astro's React integration](https://docs.astro.build/en/guides/integrations-guide/react/).
 
-The supplied home-page design contains labeled screenshot placeholders and
-initial-based client icons, with no image assets. The implementation preserves
-those placeholders, captions, and intended filenames. Replace them with actual
-captures when available. Reviews, pricing, platform availability, and vendor
-download destinations follow the reference; SourceGit’s scores remain labeled
-provisional. Home-page styles are isolated from the auxiliary routes.
+The 21 available app screenshots from GitClear’s source article are stored in
+`public/images/clients/`, with dimensions and alt text in
+`src/data/screenshot-assets.json`. The page renders them in every review tier;
+clicking a screenshot opens the original resolution. SourceGit, GitHub Desktop,
+and GitButler still need screenshots, and all eleven app icons remain initials.
+GitKraken uses an annotated layout as its lead image until a clean Commit Graph
+capture is available: the article’s `gitkraken-history.webp` is actually a diff crop.
+`reference-assets/gitclear-diff-viewers/inventory.json` records source URLs,
+retrieval results, and the remaining capture checklist. Supporting article
+artwork is archived alongside that inventory. Reviews, pricing, platform
+availability, and vendor download destinations follow the reference; SourceGit’s
+scores remain labeled provisional. Home-page styles are isolated from the auxiliary routes.
 
 ## Deploy to Cloudflare
 
